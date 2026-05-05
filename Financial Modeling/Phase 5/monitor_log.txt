@@ -1,0 +1,2259 @@
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 1, in <module>
+    import yfinance as yf
+ModuleNotFoundError: No module named 'yfinance'
+======================================================================
+  PORTFOLIO MONITOR  |  38 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $210.71   DCF implies $124.95 — 41% below market price
+  [-] MSFT    $358.96   DCF implies $213.79 — 40% below market price
+  [-] ALAB    $100.27   DCF implies $43.21 — 57% below market price
+  [-] SNPS    $383.14   DCF implies $196.20 — 49% below market price
+  [-] DDOG    $115.81   DCF implies $76.95 — 34% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  38 tickers monitored  |  5 with alerts (5 total)  |  33 unchanged
+  Compared against snapshot from: 2026-03-31 02:24 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Data collected in 48.1s
+
+======================================================================
+  PORTFOLIO MONITOR  |  38 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $210.71   DCF implies $124.95 — 41% below market price
+  [-] MSFT    $358.96   DCF implies $213.79 — 40% below market price
+  [-] ALAB    $100.27   DCF implies $43.21 — 57% below market price
+  [-] SNPS    $383.14   DCF implies $196.20 — 49% below market price
+  [-] DDOG    $115.81   DCF implies $76.95 — 34% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  38 tickers monitored  |  5 with alerts (5 total)  |  33 unchanged
+  Compared against snapshot from: 2026-03-31 02:38 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Data collected in 46.3s
+
+======================================================================
+  PORTFOLIO MONITOR  |  38 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $210.71   DCF implies $124.95 — 41% below market price
+  [-] MSFT    $358.96   DCF implies $213.79 — 40% below market price
+  [-] ALAB    $100.27   DCF implies $43.21 — 57% below market price
+  [-] SNPS    $383.14   DCF implies $196.20 — 49% below market price
+  [-] DDOG    $115.81   DCF implies $76.95 — 34% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] NVO     $35.29    RSI recovering from oversold — now 34.1 (was 28.0)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  38 tickers monitored  |  6 with alerts (6 total)  |  32 unchanged
+  Compared against snapshot from: 2026-03-31 02:56 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → simon@rozman.us
+  Data collected in 53.5s
+
+======================================================================
+  PORTFOLIO MONITOR  |  38 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (6 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $211.70   DCF implies $124.95 — 41% below market price
+  [-] MSFT    $363.88   DCF implies $213.79 — 41% below market price
+  [-] ALAB    $103.61   DCF implies $43.21 — 58% below market price
+  [-] SNPS    $390.56   DCF implies $196.20 — 50% below market price
+  [-] DDOG    $116.61   DCF implies $76.95 — 34% below market price
+  [-] AMBA    $49.23    DCF implies $11.58 — 76% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] ISRG    $455.48   RSI recovering from oversold — now 31.0 (was 27.3)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  38 tickers monitored  |  7 with alerts (7 total)  |  31 unchanged
+  Compared against snapshot from: 2026-03-31 14:51 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 61.3s
+
+======================================================================
+  PORTFOLIO MONITOR  |  41 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $206.90   DCF implies $124.95 — 40% below market price
+  [-] MSFT    $370.17   DCF implies $213.79 — 42% below market price
+  [-] ALAB    $109.60   DCF implies $43.21 — 61% below market price
+  [-] SNPS    $396.48   DCF implies $196.20 — 51% below market price
+  [-] DDOG    $118.05   DCF implies $76.95 — 35% below market price
+  [-] AMBA    $51.48    DCF implies $11.58 — 78% below market price
+  [-] AMZN    $208.27   DCF implies $51.63 — 75% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  41 tickers monitored  |  7 with alerts (7 total)  |  34 unchanged
+  Compared against snapshot from: 2026-03-31 17:23 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 55.9s
+
+======================================================================
+  PORTFOLIO MONITOR  |  41 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $206.90   DCF implies $124.95 — 40% below market price
+  [-] MSFT    $370.17   DCF implies $213.79 — 42% below market price
+  [-] ALAB    $109.60   DCF implies $43.21 — 61% below market price
+  [-] SNPS    $396.48   DCF implies $196.20 — 51% below market price
+  [-] DDOG    $118.05   DCF implies $76.95 — 35% below market price
+  [-] AMBA    $51.48    DCF implies $11.58 — 78% below market price
+  [-] AMZN    $208.27   DCF implies $51.63 — 75% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  41 tickers monitored  |  7 with alerts (7 total)  |  34 unchanged
+  Compared against snapshot from: 2026-03-31 20:30 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 57.0s
+
+======================================================================
+  PORTFOLIO MONITOR  |  41 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $197.15   DCF implies $124.95 — 37% below market price
+  [-] MSFT    $372.20   DCF implies $213.79 — 43% below market price
+  [-] ALAB    $108.75   DCF implies $43.21 — 60% below market price
+  [-] SNPS    $400.99   DCF implies $196.20 — 51% below market price
+  [-] DDOG    $121.11   DCF implies $76.95 — 36% below market price
+  [-] AMBA    $51.79    DCF implies $11.58 — 78% below market price
+  [-] AMZN    $213.01   DCF implies $51.63 — 76% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  41 tickers monitored  |  7 with alerts (7 total)  |  34 unchanged
+  Compared against snapshot from: 2026-04-01 12:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 73.4s
+
+======================================================================
+  PORTFOLIO MONITOR  |  41 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $198.78   DCF implies $124.95 — 37% below market price
+  [-] MSFT    $370.31   DCF implies $213.79 — 42% below market price
+  [-] ALAB    $114.63   DCF implies $43.21 — 62% below market price
+  [-] SNPS    $395.72   DCF implies $196.20 — 50% below market price
+  [-] DDOG    $120.23   DCF implies $76.95 — 36% below market price
+  [-] AMBA    $50.81    DCF implies $11.58 — 77% below market price
+  [-] AMZN    $209.69   DCF implies $51.63 — 75% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  41 tickers monitored  |  7 with alerts (7 total)  |  34 unchanged
+  Compared against snapshot from: 2026-04-01 23:04 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 53.1s
+
+======================================================================
+  PORTFOLIO MONITOR  |  41 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $198.97   DCF implies $124.95 — 37% below market price
+  [-] MSFT    $373.46   DCF implies $213.79 — 43% below market price
+  [-] ALAB    $117.14   DCF implies $43.21 — 63% below market price
+  [-] SNPS    $395.95   DCF implies $196.20 — 50% below market price
+  [-] DDOG    $120.36   DCF implies $76.95 — 36% below market price
+  [-] AMBA    $50.54    DCF implies $11.58 — 77% below market price
+  [-] AMZN    $209.77   DCF implies $51.63 — 75% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  41 tickers monitored  |  7 with alerts (7 total)  |  34 unchanged
+  Compared against snapshot from: 2026-04-02 16:00 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 51.7s
+
+======================================================================
+  PORTFOLIO MONITOR  |  41 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $198.97   DCF implies $124.95 — 37% below market price
+  [-] MSFT    $373.46   DCF implies $213.79 — 43% below market price
+  [-] ALAB    $117.14   DCF implies $43.21 — 63% below market price
+  [-] SNPS    $395.95   DCF implies $196.20 — 50% below market price
+  [-] DDOG    $120.36   DCF implies $76.95 — 36% below market price
+  [-] AMBA    $50.54    DCF implies $11.58 — 77% below market price
+  [-] AMZN    $209.77   DCF implies $51.63 — 75% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  41 tickers monitored  |  7 with alerts (7 total)  |  34 unchanged
+  Compared against snapshot from: 2026-04-02 20:30 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 49.7s
+
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+Traceback (most recent call last):
+  File "/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py", line 26, in <module>
+    import anthropic
+ModuleNotFoundError: No module named 'anthropic'
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $191.82   DCF implies $124.28 — 35% below market price
+  [-] MSFT    $379.89   DCF implies $213.79 — 44% below market price
+  [-] ALAB    $159.71   DCF implies $43.21 — 73% below market price
+  [-] SNPS    $414.68   DCF implies $196.20 — 53% below market price
+  [-] DDOG    $108.90   DCF implies $76.95 — 29% below market price
+  [-] AMD     $245.24   RSI crossed above 70 — now 70.2 (overbought)
+  [-] AMBA    $53.00    DCF implies $11.58 — 78% below market price
+  [-] AMZN    $237.86   DCF implies $51.53 — 78% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (2 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] BAC     $52.52    Earnings in 2 day(s) — 2026-04-15 (upcoming catalyst)
+  [+] NFLX    $103.05   Earnings in 3 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  10 with alerts (10 total)  |  32 unchanged
+  Compared against snapshot from: 2026-04-13 13:57 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 55.5s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $191.78   DCF implies $124.28 — 35% below market price
+  [-] MSFT    $384.37   DCF implies $213.79 — 44% below market price
+  [-] BAC     $53.35    RSI crossed above 70 — now 70.2 (overbought)
+  [-] ALAB    $166.79   DCF implies $43.21 — 74% below market price
+  [-] SNPS    $417.77   DCF implies $196.20 — 53% below market price
+  [-] DDOG    $110.08   DCF implies $76.95 — 30% below market price
+  [-] AMBA    $54.30    DCF implies $11.58 — 79% below market price
+  [-] AMZN    $239.89   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (2 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] BAC     $53.35    Earnings in 2 day(s) — 2026-04-15 (upcoming catalyst)
+  [+] NFLX    $103.16   Earnings in 3 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  9 with alerts (10 total)  |  33 unchanged
+  Compared against snapshot from: 2026-04-13 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 57.1s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $186.47   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $393.61   DCF implies $213.79 — 46% below market price
+  [-] BAC     $53.41    RSI crossed above 70 — now 70.4 (overbought)
+  [-] ALAB    $166.54   RSI crossed above 70 — now 72.0 (overbought)
+  [-] ALAB    $166.54   DCF implies $43.21 — 74% below market price
+  [-] SNPS    $420.48   DCF implies $196.20 — 53% below market price
+  [-] RDDT    $154.49   DCF implies $123.38 — 20% below market price
+  [-] DDOG    $110.52   DCF implies $76.95 — 30% below market price
+  [-] AMBA    $56.03    DCF implies $11.58 — 79% below market price
+  [-] AMZN    $247.97   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (4 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $37.84    Earnings in 7 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] BAC     $53.41    Earnings in 1 day(s) — 2026-04-15 (upcoming catalyst)
+  [+] ISRG    $470.22   Earnings in 7 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $105.61   Earnings in 2 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  12 with alerts (14 total)  |  30 unchanged
+  Compared against snapshot from: 2026-04-14 15:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 55.4s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $187.02   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $393.11   DCF implies $213.79 — 46% below market price
+  [-] ALAB    $170.60   DCF implies $43.21 — 75% below market price
+  [-] SNPS    $418.80   DCF implies $196.20 — 53% below market price
+  [-] RDDT    $154.54   DCF implies $123.38 — 20% below market price
+  [-] DDOG    $110.57   DCF implies $76.95 — 30% below market price
+  [-] AMBA    $56.20    DCF implies $11.58 — 79% below market price
+  [-] GOOG    $330.58   RSI crossed above 70 — now 70.2 (overbought)
+  [-] AMZN    $249.02   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (4 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $37.51    Earnings in 7 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] BAC     $53.35    Earnings in 1 day(s) — 2026-04-15 (upcoming catalyst)
+  [+] ISRG    $467.22   Earnings in 7 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $106.28   Earnings in 2 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  13 with alerts (13 total)  |  29 unchanged
+  Compared against snapshot from: 2026-04-14 16:00 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 59.2s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] DKNG    $23.67    Screener score dropped 3 → 1/8
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $184.85   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $406.95   DCF implies $213.79 — 47% below market price
+  [-] ALAB    $169.39   DCF implies $43.21 — 74% below market price
+  [-] SNPS    $428.67   DCF implies $196.20 — 54% below market price
+  [-] RDDT    $158.32   DCF implies $123.38 — 22% below market price
+  [-] DDOG    $118.52   DCF implies $76.95 — 35% below market price
+  [-] AMBA    $57.15    DCF implies $11.58 — 80% below market price
+  [-] AMZN    $248.10   DCF implies $51.53 — 79% below market price
+  [-] NVDA    $199.44   RSI crossed above 70 — now 70.2 (overbought)
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $37.70    Earnings in 6 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] BAC     $54.30    Earnings in 0 day(s) — 2026-04-15 (upcoming catalyst)
+  [+] TSLA    $391.52   Earnings in 7 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] ISRG    $468.88   Earnings in 6 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $106.08   Earnings in 1 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  15 with alerts (15 total)  |  27 unchanged
+  Compared against snapshot from: 2026-04-14 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 141.9s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $184.91   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $411.22   DCF implies $213.79 — 48% below market price
+  [-] ALAB    $172.09   DCF implies $43.21 — 75% below market price
+  [-] SNPS    $438.45   DCF implies $196.20 — 55% below market price
+  [-] RDDT    $158.48   DCF implies $123.38 — 22% below market price
+  [-] DDOG    $121.06   DCF implies $76.95 — 36% below market price
+  [-] AMBA    $57.14    DCF implies $11.58 — 80% below market price
+  [-] AMZN    $248.50   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $37.54    Earnings in 6 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] BAC     $54.32    Earnings in 0 day(s) — 2026-04-15 (upcoming catalyst)
+  [+] TSLA    $391.95   Earnings in 7 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] ISRG    $468.36   Earnings in 6 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $107.71   Earnings in 1 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  13 with alerts (13 total)  |  29 unchanged
+  Compared against snapshot from: 2026-04-15 16:02 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 91.6s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $184.91   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $411.22   DCF implies $213.79 — 48% below market price
+  [-] ALAB    $172.09   DCF implies $43.21 — 75% below market price
+  [-] SNPS    $438.45   DCF implies $196.20 — 55% below market price
+  [-] RDDT    $158.48   DCF implies $123.38 — 22% below market price
+  [-] DDOG    $121.06   DCF implies $76.95 — 36% below market price
+  [-] AMBA    $57.14    DCF implies $11.58 — 80% below market price
+  [-] AMZN    $248.50   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $37.54    Earnings in 5 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] TSLA    $391.95   Earnings in 6 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $64.94    Earnings in 7 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $468.36   Earnings in 5 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $107.71   Earnings in 0 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  13 with alerts (13 total)  |  29 unchanged
+  Compared against snapshot from: 2026-04-15 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 78.8s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (11 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $187.25   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $419.47   RSI crossed above 70 — now 70.5 (overbought)
+  [-] MSFT    $419.47   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $166.71   DCF implies $43.21 — 74% below market price
+  [-] SNPS    $443.54   DCF implies $196.20 — 56% below market price
+  [-] RDDT    $161.73   DCF implies $123.38 — 24% below market price
+  [-] DDOG    $127.06   DCF implies $76.95 — 39% below market price
+  [-] AMBA    $57.93    DCF implies $11.58 — 80% below market price
+  [-] QBTS    $22.14    RSI crossed above 70 — now 71.1 (overbought)
+  [-] ORCL    $177.65   RSI crossed above 70 — now 70.6 (overbought)
+  [-] AMZN    $248.62   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $38.27    Earnings in 5 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] TSLA    $389.94   Earnings in 6 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $67.95    Earnings in 7 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $459.00   Earnings in 5 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $108.69   Earnings in 0 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  15 with alerts (16 total)  |  27 unchanged
+  Compared against snapshot from: 2026-04-16 12:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 114.6s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (2 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] META    $676.87   Screener score dropped 5 → 0/8
+  [!] AMZN    $249.70   Screener score dropped 5 → 0/8
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $188.15   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $420.26   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $170.81   RSI crossed above 70 — now 72.6 (overbought)
+  [-] ALAB    $170.81   DCF implies $43.21 — 75% below market price
+  [-] SNPS    $441.15   DCF implies $196.20 — 56% below market price
+  [-] RDDT    $162.45   DCF implies $123.38 — 24% below market price
+  [-] DDOG    $123.47   DCF implies $76.95 — 38% below market price
+  [-] AMBA    $57.32    DCF implies $11.58 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $38.15    Earnings in 5 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] TSLA    $388.90   Earnings in 6 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $68.50    Earnings in 7 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $458.08   Earnings in 5 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] NFLX    $107.79   Earnings in 0 day(s) — 2026-04-16 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  14 with alerts (15 total)  |  28 unchanged
+  Compared against snapshot from: 2026-04-16 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  WARNING: Email could not be sent ([Errno 8] nodename nor servname provided, or not known). Monitor output was not emailed.
+  Data collected in 220.4s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $188.15   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $420.26   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $170.81   DCF implies $43.21 — 75% below market price
+  [-] SNPS    $441.15   DCF implies $196.20 — 56% below market price
+  [-] RDDT    $162.45   DCF implies $123.38 — 24% below market price
+  [-] DDOG    $123.47   DCF implies $76.95 — 38% below market price
+  [-] AMBA    $57.32    DCF implies $11.58 — 80% below market price
+  [-] AMZN    $249.70   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (6 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $38.15    Earnings in 4 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] META    $676.87   Screener score improved 0 → 5/8
+  [+] TSLA    $388.90   Earnings in 5 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $68.50    Earnings in 6 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $458.08   Earnings in 4 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] AMZN    $249.70   Screener score improved 0 → 5/8
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  13 with alerts (14 total)  |  29 unchanged
+  Compared against snapshot from: 2026-04-16 20:35 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 73.0s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] ISRG    $473.35   Screener score dropped 4 → 1/8
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (12 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $180.21   DCF implies $124.28 — 31% below market price
+  [-] MSFT    $428.01   DCF implies $213.79 — 50% below market price
+  [-] BAC     $54.44    RSI crossed above 70 — now 70.1 (overbought)
+  [-] ALAB    $169.06   DCF implies $43.21 — 74% below market price
+  [-] SNPS    $451.88   DCF implies $196.20 — 57% below market price
+  [-] RDDT    $163.19   DCF implies $123.38 — 24% below market price
+  [-] HOOD    $92.18    RSI crossed above 70 — now 70.8 (overbought)
+  [-] DDOG    $124.85   DCF implies $76.95 — 38% below market price
+  [-] AMBA    $58.29    DCF implies $11.58 — 80% below market price
+  [-] QBTS    $21.73    RSI crossed above 70 — now 70.2 (overbought)
+  [-] AMZN    $253.61   DCF implies $51.53 — 80% below market price
+  [-] NVDA    $200.34   RSI crossed above 70 — now 70.4 (overbought)
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (5 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $36.77    Earnings in 4 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] AVGO    $402.36   Golden cross formed in last 5 days (50MA crossed above 200MA)
+  [+] TSLA    $405.98   Earnings in 5 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $68.85    Earnings in 6 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $473.35   Earnings in 4 day(s) — 2026-04-21 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  17 with alerts (18 total)  |  25 unchanged
+  Compared against snapshot from: 2026-04-17 12:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 58.8s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $184.16   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $417.45   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $174.03   DCF implies $43.21 — 75% below market price
+  [-] BE      $216.95   RSI crossed above 70 — now 70.6 (overbought)
+  [-] SNPS    $460.34   DCF implies $196.20 — 57% below market price
+  [-] RDDT    $164.89   DCF implies $123.38 — 25% below market price
+  [-] DDOG    $128.44   DCF implies $76.95 — 40% below market price
+  [-] AMBA    $58.35    DCF implies $11.58 — 80% below market price
+  [-] AMZN    $246.78   DCF implies $51.53 — 79% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (4 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $37.30    Earnings in 1 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] TSLA    $390.93   Earnings in 2 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $65.85    Earnings in 3 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $468.69   Earnings in 1 day(s) — 2026-04-21 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  13 with alerts (13 total)  |  29 unchanged
+  Compared against snapshot from: 2026-04-17 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 59.4s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $183.25   DCF implies $124.28 — 32% below market price
+  [-] MSFT    $418.07   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $175.80   DCF implies $43.21 — 75% below market price
+  [-] SNPS    $460.95   DCF implies $196.20 — 57% below market price
+  [-] RDDT    $166.28   DCF implies $123.38 — 26% below market price
+  [-] HOOD    $91.28    RSI crossed above 70 — now 70.1 (overbought)
+  [-] DDOG    $129.74   DCF implies $76.95 — 41% below market price
+  [-] AMBA    $59.28    DCF implies $11.58 — 80% below market price
+  [-] AMZN    $248.28   DCF implies $51.53 — 79% below market price
+  [-] NVDA    $202.06   RSI crossed above 70 — now 71.6 (overbought)
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (4 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $36.68    Earnings in 1 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] TSLA    $392.50   Earnings in 2 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] INTC    $65.70    Earnings in 3 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $465.60   Earnings in 1 day(s) — 2026-04-21 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  14 with alerts (14 total)  |  28 unchanged
+  Compared against snapshot from: 2026-04-20 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 58.0s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $184.29   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $426.36   RSI crossed above 70 — now 70.7 (overbought)
+  [-] MSFT    $426.36   DCF implies $213.79 — 50% below market price
+  [-] ALAB    $191.19   DCF implies $43.21 — 77% below market price
+  [-] SNPS    $472.31   DCF implies $196.20 — 58% below market price
+  [-] RDDT    $160.10   DCF implies $123.38 — 23% below market price
+  [-] DDOG    $131.71   DCF implies $76.95 — 42% below market price
+  [-] AMBA    $60.51    DCF implies $11.58 — 81% below market price
+  [-] ORCL    $183.99   RSI crossed above 70 — now 71.7 (overbought)
+  [-] AMZN    $252.71   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (6 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] HAL     $38.02    Earnings in 0 day(s) — 2026-04-21 (upcoming catalyst)
+  [+] BE      $229.26   Earnings in 7 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] TSLA    $390.14   Earnings in 1 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] HOOD    $87.69    Earnings in 7 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] INTC    $66.64    Earnings in 2 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] ISRG    $458.04   Earnings in 0 day(s) — 2026-04-21 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  15 with alerts (16 total)  |  27 unchanged
+  Compared against snapshot from: 2026-04-20 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 55.9s
+
+======================================================================
+  PORTFOLIO MONITOR  |  42 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $187.31   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $431.77   DCF implies $213.79 — 50% below market price
+  [-] ALAB    $191.85   DCF implies $43.21 — 77% below market price
+  [-] SNPS    $471.57   DCF implies $196.20 — 58% below market price
+  [-] RDDT    $161.57   DCF implies $123.38 — 24% below market price
+  [-] DDOG    $130.46   DCF implies $76.95 — 41% below market price
+  [-] AMBA    $60.39    DCF implies $11.58 — 81% below market price
+  [-] AMZN    $252.13   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] MSFT    $431.77   Earnings in 7 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] BE      $226.82   Earnings in 6 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] META    $674.93   Earnings in 7 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] TSLA    $390.99   Earnings in 0 day(s) — 2026-04-22 (upcoming catalyst)
+  [+] HOOD    $87.92    Earnings in 6 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] INTC    $65.81    Earnings in 1 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] GOOG    $335.50   Earnings in 7 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AMZN    $252.13   Earnings in 7 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  42 tickers monitored  |  14 with alerts (16 total)  |  28 unchanged
+  Compared against snapshot from: 2026-04-21 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 65.7s
+
+
+275 Failed downloads:
+['AIZ', 'BAX', 'EL', 'EVRG', 'ICE', 'ROST', 'MET', 'EXPE', 'KEY', 'PFE', 'DOC', 'APD', 'FCX', 'LULU', 'UPS', 'AMP', 'CRL', 'CTSH', 'ES', 'CEG', 'F', 'NRG', 'ACGL', 'ARES', 'RVTY', 'PODD', 'DAL', 'WAB', 'CIEN', 'ETN', 'AWK', 'ROP', 'FIS', 'J', 'HD', 'WMB', 'NI', 'AOS', 'C', 'FOXA', 'PCAR', 'COHR', 'EG', 'ADM', 'EA', 'DRI', 'CME', 'AEE', 'APP', 'IDXX', 'ESS', 'KO', 'CFG', 'HUM', 'BSX', 'HOOD', 'CSX', 'EFX', 'SHW', 'MOS', 'OTIS', 'BMY', 'Q', 'ALGN', 'CSGP', 'HBAN', 'SYF', 'KLAC', 'LNT', 'EMR', 'TXN', 'ADSK', 'SLB', 'GPC', 'JCI', 'KMI', 'AVY', 'FOX', 'TRGP', 'APTV', 'HST', 'YUM', 'GOOGL', 'USB', 'LH', 'ANET', 'BKNG', 'BR', 'IRM', 'AMAT', 'PANW', 'UBER', 'WBD', 'INCY', 'AMT', 'CRWD', 'GEHC', 'SMCI', 'MSFT', 'PSX', 'BG', 'REG', 'DIS', 'CARR', 'CL', 'MTB', 'PHM', 'IEX', 'WTW', 'SCHW', 'BRO', 'MTD', 'HCA', 'ARE', 'BLK', 'ERIE', 'LEN', 'PPL', 'CBOE', 'CF', 'GPN', 'PKG', 'KKR', 'KHC', 'MCD', 'NWSA', 'GDDY', 'INTC', 'VZ', 'TJX', 'TER', 'ABBV', 'WM', 'WST', 'TSLA', 'HIG', 'DLR', 'DOV', 'CVS', 'FE', 'ORLY', 'LVS', 'CRM', 'MLM', 'SYK', 'BXP', 'NOW', 'AMD', 'QCOM']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['EQIX', 'BEN', 'LDOS', 'CAG', 'RL', 'CHTR', 'HAL', 'GL', 'JPM', 'CPAY', 'CI', 'TRV', 'KR', 'PTC', 'AMCR', 'DG', 'LRCX', 'CAT', 'ROK', 'ISRG', 'ELV', 'FSLR', 'LHX', 'MAA', 'WEC', 'A', 'DOW', 'ZBH', 'COF', 'MDLZ', 'TT', 'NXPI', 'GLW', 'PYPL', 'RMD', 'ON', 'RCL', 'APA', 'FIX', 'CRH', 'UDR', 'IVZ', 'WRB', 'DDOG', 'LUV', 'ADI', 'LII', 'FRT', 'SNPS', 'FANG', 'GIS', 'AES', 'NKE', 'HPQ', 'GEN', 'CCL', 'DASH']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['STZ', 'MNST', 'BK', 'EME', 'COST', 'GEV', 'ROL', 'GOOG', 'DLTR', 'XEL', 'FTNT', 'XYL', 'LITE', 'TYL', 'ACN', 'MAR', 'VMC', 'KVUE', 'WAT', 'SWKS', 'MCHP', 'TMUS', 'IP', 'ALL', 'HWM', 'PM', 'AIG', 'FITB', 'AAPL', 'CLX', 'WSM', 'UNP', 'CPB', 'BA', 'MA', 'RF', 'BIIB', 'BBY', 'POOL', 'SPGI', 'DUK', 'WY', 'SYY', 'LLY', 'PH', 'SPG', 'HPE', 'MCO', 'AXP', 'FFIV', 'KIM', 'VRSN', 'CDW', 'STX', 'TECH', 'CMCSA']: OperationalError('unable to open database file')
+['EXE']: SSLError('Failed to perform, curl: (35) TLS connect error: error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['EXPD']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['RSG', 'GWW']: ConnectionError('Failed to perform, curl: (7) getsockname() failed with errno 9: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['VTR']: Timeout('Failed to perform, curl: (28) Operation timed out after 10003 milliseconds with 0 out of 1298 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['UHS']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 38: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['URI', 'LIN', 'SBUX', 'IBKR']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['GE', 'TPL']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['ALLE']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] NOW     $85.45    Price dropped -17.3% since last run ($103.27 → $85.45)
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $185.97   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $419.40   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $200.22   DCF implies $43.21 — 78% below market price
+  [-] SNPS    $461.58   DCF implies $196.20 — 57% below market price
+  [-] RDDT    $157.13   DCF implies $123.38 — 21% below market price
+  [-] DDOG    $128.81   DCF implies $76.95 — 40% below market price
+  [-] INTC    $67.66    RSI crossed above 70 — now 71.0 (overbought)
+  [-] AMBA    $60.55    DCF implies $11.58 — 81% below market price
+  [-] AMZN    $256.85   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] MSFT    $419.40   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] CTRE    $38.25    Earnings in 7 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] BE      $239.32   Earnings in 5 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] META    $666.27   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AAPL    $273.27   Earnings in 7 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $157.13   Earnings in 7 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] HOOD    $85.78    Earnings in 5 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] INTC    $67.66    Earnings in 0 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] GOOG    $338.56   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AMZN    $256.85   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  16 with alerts (20 total)  |  27 unchanged
+  Compared against snapshot from: 2026-04-22 16:10 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  TMO      Thermo Fisher Scientific      $461.06     -10.30%
+  WDAY     Workday, Inc.                 $114.36     -9.67%
+  IBM      IBM                           $229.74     -8.78%
+  IQV      IQVIA                         $161.01     -8.10%
+  INTU     Intuit                        $377.58     -7.61%
+  ADBE     Adobe Inc.                    $237.17     -7.33%
+  EPAM     EPAM Systems                  $119.87     -7.16%
+  IT       Gartner                       $146.36     -6.83%
+  FDS      FactSet                       $227.27     -6.37%
+  PSKY     Paramount Skydance Corporati  $11.17      -5.34%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  NFLX     Netflix                       $93.07      -13.65%
+  TSCO     Tractor Supply                $38.58      -13.56%
+  LMT      Lockheed Martin               $528.91     -12.94%
+  NOC      Northrop Grumman              $589.45     -12.38%
+  ALB      Albemarle Corporation         $191.32     -11.27%
+  TMO      Thermo Fisher Scientific      $461.06     -10.65%
+  FICO     Fair Isaac                    $972.18     -9.14%
+  DHR      Danaher Corporation           $176.43     -8.95%
+  SATS     EchoStar                      $121.02     -8.66%
+  IBM      IBM                           $229.74     -8.47%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  AKAM     Akamai Technologies           $95.55      -16.55%
+  TSCO     Tractor Supply                $38.58      -15.19%
+  AXON     Axon Enterprise               $387.37     -15.16%
+  NOC      Northrop Grumman              $589.45     -13.59%
+  LMT      Lockheed Martin               $528.91     -13.32%
+  INTU     Intuit                        $377.58     -12.42%
+  ABT      Abbott Laboratories           $91.26      -11.75%
+  WDAY     Workday, Inc.                 $114.36     -11.55%
+  VRSK     Verisk Analytics              $173.97     -10.66%
+  HSY      Hershey Company (The)         $192.33     -10.63%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 62.3s
+
+
+256 Failed downloads:
+['SYF', 'BLDR', 'CMCSA', 'BLK', 'EBAY', 'LULU', 'ABT', 'EG', 'TTD', 'HSY', 'MPC', 'JNJ', 'JPM', 'MCHP', 'CARR', 'WSM', 'WELL', 'SATS', 'TSCO', 'TROW', 'PEG', 'INTU', 'CTRA', 'TJX', 'SO', 'ZTS', 'TER', 'ELV', 'HUBB', 'TRGP', 'KEYS', 'PLTR', 'JCI', 'EA', 'ON', 'CSCO', 'BA', 'GPN', 'GEHC', 'GE', 'BG', 'GEV', 'KDP', 'AIZ', 'DUK', 'LMT', 'VRSN', 'NWS', 'AON', 'LEN', 'TECH', 'GOOG']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['RJF', 'WY', 'NEE', 'CVX', 'LVS', 'ALLE', 'MLM', 'AJG', 'TXT', 'ERIE', 'URI', 'EME', 'BBY', 'MAR', 'F', 'VRT', 'TFC', 'BXP', 'CRWD', 'DTE', 'MCK', 'NDAQ', 'ZBH', 'BKR', 'MCD', 'PG', 'DAL', 'VMC', 'SJM', 'COHR', 'PGR', 'CBRE', 'XYZ', 'OMC', 'AZO', 'IDXX', 'AXP', 'CB', 'ACN', 'PLD', 'WMT', 'RTX', 'FCX', 'LYB', 'DDOG', 'INVH', 'BRO', 'IBKR', 'ETN', 'DVN', 'MPWR', 'DVA', 'CAH', 'CMG', 'PH', 'REGN', 'SYY', 'ES', 'AXON', 'COIN', 'STT', 'GD', 'AES', 'CAT', 'DHI', 'CDNS', 'CRM', 'TGT', 'EQT', 'BMY', 'IEX', 'SPG', 'STLD', 'WAB', 'LNT', 'OKE', 'MOS', 'SMCI', 'TAP', 'COP', 'PCG', 'DOV', 'WYNN', 'LDOS', 'VZ', 'BDX', 'AMGN', 'AVB', 'PFE', 'VICI', 'CTSH', 'COF', 'HII', 'HD', 'CHTR', 'DLTR', 'ARE', 'KHC', 'SRE', 'TXN', 'CSX', 'ETR', 'KO', 'WST', 'TTWO', 'MKC', 'BALL', 'CPRT', 'FSLR', 'NUE', 'ATO', 'LLY', 'CTAS', 'EQR', 'HAL', 'AEE', 'AMD', 'NTAP', 'NXPI', 'PFG', 'ORCL', 'STE', 'PEP', 'WDAY', 'WBD', 'MCO']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['Q', 'AMZN', 'IVZ', 'LOW', 'DG', 'CTVA', 'FIS', 'ED', 'TRV', 'ROL', 'EXC', 'UDR', 'CBOE', 'PYPL', 'FISV', 'GL', 'USB', 'KIM', 'AEP', 'ALGN', 'CI', 'ADSK', 'SBAC', 'RL', 'MGM', 'XYL', 'BX', 'UNH', 'CAG', 'TMO', 'FICO', 'SWK', 'IR', 'NOW', 'WAT', 'COR', 'TDY', 'JKHY', 'SNDK', 'GEN', 'FTV', 'ALL', 'ECL', 'CRL', 'EXPE', 'GOOGL', 'TDG', 'DGX', 'BRK-B', 'DRI', 'GRMN', 'EXR', 'RSG', 'HIG', 'LITE', 'EQIX', 'AWK', 'MDLZ', 'A', 'TYL', 'RCL', 'BAC', 'ITW', 'GNRC', 'PTC']: OperationalError('unable to open database file')
+['REG', 'AKAM', 'UNP', 'UPS', 'SYK', 'LRCX', 'UBER', 'ARES', 'MAA', 'CMS', 'TSN']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['MRK', 'ALB']: SSLError('Failed to perform, curl: (35) TLS connect error: error:00000000:invalid library (0):OPENSSL_internal:invalid library (0). See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $187.60   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $415.75   DCF implies $213.79 — 49% below market price
+  [-] ALAB    $197.54   DCF implies $43.21 — 78% below market price
+  [-] SNPS    $456.85   DCF implies $196.20 — 57% below market price
+  [-] DDOG    $127.86   DCF implies $76.95 — 40% below market price
+  [-] AMBA    $61.34    DCF implies $11.58 — 81% below market price
+  [-] AMZN    $255.08   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] MSFT    $415.75   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] CTRE    $37.98    Earnings in 7 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] BE      $237.57   Earnings in 5 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] META    $659.15   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AAPL    $273.43   Earnings in 7 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $152.96   Earnings in 7 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] HOOD    $83.54    Earnings in 5 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] INTC    $66.78    Earnings in 0 day(s) — 2026-04-23 (upcoming catalyst)
+  [+] GOOG    $337.75   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AMZN    $255.08   Earnings in 6 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  15 with alerts (17 total)  |  28 unchanged
+  Compared against snapshot from: 2026-04-23 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  IQV      IQVIA                         $160.68     -8.29%
+  IBM      IBM                           $231.08     -8.25%
+  RVTY     Revvity                       $87.15      -7.56%
+  ADBE     Adobe Inc.                    $238.98     -6.63%
+  EPAM     EPAM Systems                  $120.77     -6.47%
+  APP      AppLovin                      $454.17     -6.11%
+  FDS      FactSet                       $228.08     -6.03%
+  HOOD     Robinhood Markets             $83.54      -5.53%
+  IT       Gartner                       $148.60     -5.40%
+  CPAY     Corpay                        $313.47     -5.21%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  NFLX     Netflix                       $92.82      -13.89%
+  NOC      Northrop Grumman              $587.66     -12.65%
+  NRG      NRG Energy                    $154.53     -8.29%
+  EFX      Equifax                       $174.93     -8.12%
+  NCLH     Norwegian Cruise Line Holdin  $18.42      -8.04%
+  IBM      IBM                           $231.08     -7.94%
+  TEL      TE Connectivity               $217.73     -7.93%
+  DHR      Danaher Corporation           $178.57     -7.85%
+  IP       International Paper           $33.54      -7.32%
+  LUV      Southwest Airlines            $37.75      -7.09%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  TPL      Texas Pacific Land Corporati  $439.15     -17.96%
+  NKE      Nike, Inc.                    $44.78      -16.28%
+  APTV     Aptiv                         $60.41      -14.82%
+  PODD     Insulet Corporation           $192.21     -14.76%
+  NOC      Northrop Grumman              $587.66     -13.85%
+  PSX      Phillips 66                   $159.53     -13.36%
+  EXE      Expand Energy                 $96.30      -12.21%
+  CSGP     CoStar Group                  $37.38      -9.84%
+  EPAM     EPAM Systems                  $120.77     -9.22%
+  VRSK     Verisk Analytics              $177.14     -9.03%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 57.7s
+
+
+216 Failed downloads:
+['XYL', 'DELL', 'CMS', 'EA', 'MU', 'DDOG', 'MAR', 'IDXX', 'AIZ', 'ABNB', 'CDW', 'TRV', 'PNC', 'CRH', 'WRB', 'DHI', 'AES', 'STX', 'PSX', 'EMR', 'JPM', 'CB', 'EL', 'CSX', 'DUK', 'NDSN', 'BAC', 'SYK', 'EIX', 'CPAY', 'NCLH', 'FANG', 'COST', 'FICO', 'AMP', 'AMAT', 'EXPE', 'ACN', 'GOOGL', 'NI', 'ABT', 'INVH', 'OKE', 'IVZ', 'ZBH', 'VZ', 'KMI', 'HSY', 'IBM', 'GDDY', 'SBUX', 'TER', 'FTV', 'SNPS', 'DG', 'SJM', 'STLD', 'HAS', 'NOC', 'IR', 'KDP', 'MSCI', 'KO', 'MAS', 'IT', 'COR', 'GLW', 'ANET', 'STZ', 'APP', 'PHM', 'ADBE', 'MPC', 'LH', 'EXR', 'CME', 'ZTS', 'ACGL', 'WMT', 'ITW', 'MLM', 'NTRS', 'BKNG', 'CSGP', 'FTNT', 'UBER', 'WDAY']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['JNJ', 'ALL', 'COHR', 'UHS', 'ICE', 'VRSN', 'ARES', 'ORLY', 'GRMN', 'NUE', 'HUM', 'PLD', 'WAT', 'REG', 'HLT', 'FCX', 'PSKY', 'GIS', 'TRMB', 'BXP', 'AMCR', 'PNR', 'NVDA', 'KLAC', 'SYF', 'MRK', 'SLB', 'CCI', 'FSLR', 'AJG', 'NSC', 'GOOG', 'RSG', 'PANW', 'TFC', 'TPL', 'TMO', 'AKAM', 'ADSK', 'VST', 'COO', 'FFIV', 'NFLX', 'MDT', 'TXT', 'TTWO', 'SPGI', 'JKHY', 'GE', 'LITE', 'HAL', 'DHR', 'AZO']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['GEN', 'ED', 'GL', 'NXPI', 'AMT', 'SOLV', 'PM', 'CHD', 'SNDK', 'TGT', 'EXPD', 'PGR', 'WBD', 'AEP', 'KKR', 'FAST', 'FOX', 'TJX', 'GS', 'NVR', 'HST', 'NWSA', 'KVUE', 'DASH', 'HUBB', 'PNW', 'HSIC', 'EW', 'CMCSA', 'WYNN', 'MSFT', 'ALB', 'AFL', 'TECH', 'AVGO', 'PWR', 'BRK-B', 'ATO', 'PCG', 'APO', 'CL', 'SRE', 'A', 'CRWD', 'LRCX', 'DTE', 'META', 'HWM', 'MGM', 'VICI', 'CLX', 'TSCO', 'CAG', 'DGX', 'QCOM', 'PPL', 'Q', 'V', 'IBKR', 'PRU', 'CSCO', 'BDX', 'CBRE', 'VTRS', 'EME', 'RMD', 'XOM', 'BIIB', 'WFC', 'AVB', 'EPAM']: OperationalError('unable to open database file')
+['DIS', 'CASY', 'NKE', 'PPG', 'KHC']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] ORCL    $173.28   Screener score dropped 2 → 0/8
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (11 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $185.21   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $424.60   DCF implies $213.79 — 50% below market price
+  [-] ALAB    $212.84   DCF implies $42.94 — 80% below market price
+  [-] SNPS    $500.82   RSI crossed above 70 — now 70.7 (overbought)
+  [-] SNPS    $500.82   DCF implies $196.20 — 61% below market price
+  [-] RDDT    $154.89   DCF implies $121.43 — 22% below market price
+  [-] DDOG    $129.48   DCF implies $76.95 — 41% below market price
+  [-] AMBA    $66.92    RSI crossed above 70 — now 78.0 (overbought)
+  [-] AMBA    $66.92    DCF implies $11.58 — 83% below market price
+  [-] AMZN    $263.99   DCF implies $51.53 — 80% below market price
+  [-] NVDA    $208.26   RSI crossed above 70 — now 71.5 (overbought)
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $185.21   Earnings in 4 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] MSFT    $424.60   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] BE      $231.17   Earnings in 1 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] PLTR    $143.09   Earnings in 7 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] META    $675.05   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AAPL    $271.06   Earnings in 3 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $154.89   Earnings in 3 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] HOOD    $84.71    Earnings in 1 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] GOOG    $342.32   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AMZN    $263.99   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  16 with alerts (22 total)  |  27 unchanged
+  Compared against snapshot from: 2026-04-23 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $180.13     -25.50%
+  HCA      HCA Healthcare                $432.46     -8.77%
+  ERIE     Erie Indemnity                $233.62     -6.14%
+  BSX      Boston Scientific             $62.07      -5.51%
+  EBAY     eBay Inc.                     $97.94      -5.28%
+  DE       Deere & Company               $562.64     -4.95%
+  MRNA     Moderna                       $50.73      -4.01%
+  LHX      L3Harris                      $317.51     -3.85%
+  CF       CF Industries                 $120.93     -3.71%
+  HIG      Hartford (The)                $134.45     -3.70%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $180.13     -23.87%
+  LULU     Lululemon Athletica           $143.80     -14.04%
+  LMT      Lockheed Martin               $513.45     -13.30%
+  TEL      TE Connectivity               $214.67     -12.79%
+  EFX      Equifax                       $172.47     -12.10%
+  IP       International Paper           $32.65      -12.07%
+  SATS     EchoStar                      $117.50     -11.79%
+  HCA      HCA Healthcare                $432.46     -11.38%
+  RTX      RTX Corporation               $174.26     -11.28%
+  CTSH     Cognizant                     $55.11      -10.10%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  LMT      Lockheed Martin               $513.45     -17.74%
+  CHTR     Charter Communications        $180.13     -17.72%
+  EXE      Expand Energy                 $96.44      -15.34%
+  APTV     Aptiv                         $60.10      -15.22%
+  AXON     Axon Enterprise               $397.12     -13.70%
+  EQT      EQT Corporation               $58.91      -13.28%
+  NOW      ServiceNow                    $90.17      -12.51%
+  PODD     Insulet Corporation           $189.56     -12.24%
+  BSX      Boston Scientific             $62.07      -11.05%
+  HII      Huntington Ingalls Industrie  $359.29     -10.75%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 177.1s
+
+
+281 Failed downloads:
+['KO', 'NUE', 'TTD', 'GE', 'DG', 'FISV', 'WY', 'MRSH', 'UHS', 'CSX', 'EQIX', 'SWKS', 'IR', 'COST', 'SNDK', 'MLM', 'ADP', 'BF-B', 'DASH', 'TFC', 'CTAS', 'BKNG', 'CBRE', 'ABT', 'SLB', 'RCL', 'RL', 'COO', 'PHM', 'PODD', 'MSCI', 'LII', 'GOOG', 'GWW', 'ODFL', 'CME', 'CCI', 'PKG', 'KEY', 'WAB', 'CI', 'VTRS', 'BAX', 'TPL', 'VTR', 'CTVA', 'DHR', 'LULU', 'JCI', 'HLT', 'SBAC', 'MKC', 'ACGL', 'LVS', 'HUM', 'MDT', 'DHI', 'CTRA', 'ANET', 'CRH', 'SWK', 'LNT', 'HPQ', 'INTC', 'NXPI', 'SJM', 'UNP', 'RSG', 'TAP', 'WDAY', 'PEP', 'ALL', 'GOOGL', 'HWM', 'LDOS', 'MOS', 'CMS', 'EPAM', 'FOXA', 'WDC', 'KKR', 'CF', 'EXR', 'PLD', 'NKE', 'EVRG', 'STLD', 'CSGP', 'FE', 'AON', 'TRMB', 'D', 'WEC', 'WFC', 'RMD', 'RTX', 'ABBV', 'MU', 'ROL', 'WTW', 'CNC', 'EIX', 'XOM', 'ECL', 'AMCR', 'IT', 'PM', 'AEE', 'ZBRA', 'ARES', 'FICO', 'AAPL', 'IQV', 'LUV', 'MRK', 'JNJ', 'GEHC', 'DOV', 'APD', 'PLTR', 'HUBB', 'CIEN', 'PGR', 'AMGN', 'TDY', 'ERIE', 'TER', 'AVGO', 'ESS', 'GPN']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['AME', 'CBOE', 'C', 'CTSH', 'MS', 'WELL', 'APO', 'PPG', 'GPC', 'BEN', 'ALB', 'KLAC', 'ORCL', 'POOL', 'MPWR', 'WMT', 'ISRG', 'EA', 'GRMN', 'FSLR', 'AWK', 'CL', 'IRM', 'MCO', 'CDW', 'FRT', 'AIZ', 'DECK', 'CLX', 'TXN', 'ITW', 'EXE', 'WST', 'ROK', 'MNST', 'LIN', 'HOOD', 'VMC', 'HRL', 'PWR', 'NRG', 'OMC', 'EW', 'KR', 'BKR', 'AMD', 'AZO', 'HD', 'ABNB', 'TROW', 'MAS', 'VLO', 'SW', 'GNRC', 'WBD', 'BK', 'CEG', 'LHX', 'DXCM', 'OTIS', 'TGT', 'NSC', 'IFF', 'CASY', 'CMCSA', 'GEN', 'INVH', 'DTE', 'CAT', 'L', 'BRO', 'KDP', 'MPC', 'MET', 'ICE', 'APA', 'IDXX']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['REGN', 'FANG', 'CPT', 'BRK-B', 'TKO', 'YUM', 'NWS', 'PNW', 'PG', 'RVTY', 'NDAQ', 'VST', 'AIG', 'JPM', 'VRSN', 'TPR', 'DOC', 'FOX', 'PNC', 'PH', 'PEG', 'IBM', 'PPL', 'CARR', 'IVZ', 'GDDY', 'EMR', 'GL', 'J', 'SYF', 'CPRT', 'DLTR', 'WMB', 'UNH', 'SOLV', 'ROP', 'ED', 'MRNA', 'URI', 'LOW', 'FIX', 'SPGI', 'COIN', 'SRE', 'MCHP', 'JBHT', 'VICI', 'BAC', 'BLK', 'KMB', 'DDOG', 'BLDR', 'TXT', 'DE', 'WSM', 'EBAY', 'TTWO', 'EXPD', 'CAG', 'DVN', 'FIS', 'JBL', 'QCOM', 'FTV', 'ELV', 'A', 'BALL', 'TYL', 'CVX', 'BR']: OperationalError('unable to open database file')
+['CRWD', 'MSFT']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['MAA', 'LH']: SSLError('Failed to perform, curl: (35) Recv failure: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] ALAB    $194.51   DCF implies $42.94 — 78% below market price
+  [-] SNPS    $498.93   DCF implies $196.20 — 61% below market price
+  [-] RDDT    $161.74   DCF implies $121.43 — 25% below market price
+  [-] DDOG    $131.79   DCF implies $76.95 — 42% below market price
+  [-] AMBA    $64.54    DCF implies $11.58 — 82% below market price
+  [-] GOOG    $349.18   RSI crossed above 70 — now 72.8 (overbought)
+  [-] AMZN    $262.08   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] BE      $234.37   Earnings in 1 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] PLTR    $143.33   Earnings in 7 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] META    $675.25   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AAPL    $266.90   Earnings in 3 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $161.74   Earnings in 3 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] HOOD    $83.59    Earnings in 1 day(s) — 2026-04-28 (upcoming catalyst)
+  [+] GOOG    $349.18   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] ORCL    $171.25   Screener score improved 0 → 3/8
+  [+] AMZN    $262.08   Earnings in 2 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  13 with alerts (16 total)  |  30 unchanged
+  Compared against snapshot from: 2026-04-27 12:03 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  DPZ      Domino's                      $330.42     -10.17%
+  COHR     Coherent Corp.                $316.12     -5.94%
+  GLW      Corning Inc.                  $167.77     -4.62%
+  SMCI     Supermicro                    $27.90      -4.07%
+  LITE     Lumentum                      $846.04     -4.04%
+  ULTA     Ulta Beauty                   $536.11     -4.02%
+  AMAT     Applied Materials             $400.95     -3.86%
+  NEM      Newmont                       $116.51     -3.47%
+  GEV      GE Vernova                    $1110.52    -3.36%
+  LRCX     Lam Research                  $259.29     -3.17%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $177.38     -27.51%
+  TSCO     Tractor Supply                $36.01      -19.65%
+  TEL      TE Connectivity               $211.00     -14.80%
+  FCX      Freeport-McMoRan              $60.42      -13.91%
+  IP       International Paper           $32.26      -12.55%
+  EFX      Equifax                       $173.86     -12.39%
+  NOC      Northrop Grumman              $577.34     -12.12%
+  SATS     EchoStar                      $120.25     -11.00%
+  LMT      Lockheed Martin               $518.03     -10.88%
+  BBY      Best Buy                      $59.68      -10.85%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 617.7s
+
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (2 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $184.78   DCF implies $124.28 — 33% below market price
+  [-] MSFT    $424.82   DCF implies $213.79 — 50% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $184.78   Earnings in 4 day(s) — 2026-05-01 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  2 with alerts (3 total)  |  41 unchanged
+  Compared against snapshot from: 2026-04-27 16:11 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  WARNING: Email could not be sent ([Errno 8] nodename nor servname provided, or not known). Monitor output was not emailed.
+  Data collected in 286.1s
+
+
+1 Failed download:
+['MSFT']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] MSFT    $429.25   Screener score dropped 5 → 0/8
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $188.36   DCF implies $124.28 — 34% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (1 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $188.36   Earnings in 3 day(s) — 2026-05-01 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  2 with alerts (3 total)  |  41 unchanged
+  Compared against snapshot from: 2026-04-28 12:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  WARNING: Email could not be sent ([Errno 8] nodename nor servname provided, or not known). Monitor output was not emailed.
+  Data collected in 111.0s
+
+
+265 Failed downloads:
+['CPB', 'JKHY', 'LULU', 'MDLZ', 'LYV', 'SOLV', 'CNC', 'CB', 'DLTR', 'FFIV', 'RCL', 'COHR', 'C', 'UNH', 'TRMB', 'KMB', 'EXC', 'GEV', 'ALL', 'KLAC', 'CCI', 'CIEN', 'LII', 'WAT', 'WRB', 'NTRS', 'TTWO', 'KVUE', 'NUE', 'RL', 'EMR', 'MS', 'EVRG', 'KHC', 'URI', 'GEHC', 'VRSK', 'HUBB', 'ABBV', 'INTU', 'TTD', 'D', 'AAPL', 'MET', 'EL', 'VTR', 'AXON', 'ABNB', 'APO', 'PSX', 'HST', 'AMGN', 'FTV', 'AMCR', 'LMT', 'AME', 'ELV']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['NFLX', 'EME', 'ADI', 'VRT', 'SYK', 'CRL', 'IRM', 'DVN', 'LITE', 'WAB', 'PFG', 'MKC', 'MRNA', 'HD', 'ABT', 'CAG', 'LOW', 'GL', 'SJM', 'CLX', 'DTE', 'GM', 'HSY', 'BAC', 'HSIC', 'FIX', 'HPE', 'PTC', 'GILD', 'IEX', 'PLD', 'UNP', 'BALL', 'JCI', 'EBAY', 'NEE', 'PLTR', 'PGR', 'CTVA', 'MAR', 'NVR', 'DASH', 'JPM', 'LUV', 'NRG', 'AMZN', 'TER', 'DGX', 'EG', 'PNC', 'CPAY', 'CPRT', 'PCAR', 'SRE', 'DAL', 'NVDA', 'WST', 'COST', 'EA', 'BG', 'QCOM', 'AZO', 'PHM', 'UDR', 'MCK', 'V', 'MAA', 'EXPD', 'MA', 'ROL', 'HLT', 'CVX', 'AMD', 'HWM', 'NDSN', 'COO', 'APTV', 'PKG', 'FRT', 'ADSK', 'AES', 'APA', 'EPAM', 'CTSH', 'CARR', 'KEY', 'MSCI', 'MRSH', 'CRH', 'ERIE', 'SBAC', 'SMCI', 'AVGO', 'ON', 'EXPE', 'GLW', 'IR', 'SYF', 'OXY', 'PRU', 'AIZ', 'ADBE', 'TT', 'SWK', 'STZ', 'INCY', 'WYNN', 'F', 'VTRS', 'KO', 'COR', 'PANW', 'CSX', 'ISRG', 'ACGL', 'MGM', 'GD', 'GWW', 'TEL', 'GPN', 'VRTX', 'HCA', 'POOL', 'NXPI', 'IBKR', 'TROW', 'MTD', 'FISV', 'WELL']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PPG', 'TSLA', 'FANG', 'PCG', 'OTIS', 'IQV', 'CMCSA', 'NWSA', 'FITB', 'VICI', 'WM', 'KEYS', 'CINF', 'NTAP', 'LRCX', 'O', 'DOC', 'KIM', 'BSX', 'BKNG', 'CFG', 'APP', 'TXT', 'SYY', 'TXN', 'CF', 'PYPL', 'ADP', 'CSGP', 'FAST', 'ESS', 'VST', 'EXE', 'SO', 'LH', 'CBOE', 'CRWD', 'MTB', 'PNR', 'AOS', 'A', 'DECK', 'GE', 'MDT', 'GEN', 'EOG', 'MPWR', 'TRGP', 'REG', 'OMC', 'TMUS', 'PSKY', 'HPQ', 'HAL', 'ALLE', 'INVH', 'AJG', 'VMC', 'WTW', 'CEG', 'AVB', 'IVZ', 'CAT', 'WDC', 'DVA']: OperationalError('unable to open database file')
+['LEN', 'BBY']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['APD']: SSLError('Failed to perform, curl: (35) Recv failure: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TYL']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 9: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['OKE', 'GPC', 'AMAT', 'HUM', 'USB']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['VRSN', 'TPL', 'LNT']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['NSC']: Timeout('Failed to perform, curl: (28) Connection timed out after 32932 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DOV']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $188.36   DCF implies $124.28 — 34% below market price
+  [-] MSFT    $429.25   DCF implies $213.79 — 50% below market price
+  [-] ALAB    $183.31   DCF implies $42.94 — 77% below market price
+  [-] SNPS    $483.89   DCF implies $196.20 — 59% below market price
+  [-] DDOG    $131.55   DCF implies $76.95 — 42% below market price
+  [-] AMBA    $63.75    DCF implies $11.58 — 82% below market price
+  [-] AMZN    $259.70   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (15 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $188.36   Earnings in 2 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] MSFT    $429.25   Screener score improved 0 → 5/8
+  [+] MSFT    $429.25   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] ALAB    $183.31   Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SMCI    $27.25    Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] NVO     $41.17    Earnings in 7 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $51.10    Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $141.18   Earnings in 5 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] META    $671.34   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AAPL    $270.71   Earnings in 1 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $147.93   Earnings in 1 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] PAYC    $124.82   Earnings in 7 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] AMD     $323.21   Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] GOOG    $347.50   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AMZN    $259.70   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  17 with alerts (22 total)  |  26 unchanged
+  Compared against snapshot from: 2026-04-28 20:36 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  ARE      Alexandria Real Estate Equit  $40.41      -11.30%
+  ZBH      Zimmer Biomet                 $82.80      -10.57%
+  UHS      Universal Health Services     $162.54     -9.45%
+  SNDK     Sandisk                       $1002.35    -6.34%
+  ALB      Albemarle Corporation         $186.90     -6.33%
+  NEM      Newmont                       $109.90     -5.32%
+  DELL     Dell Technologies             $205.93     -4.65%
+  XYL      Xylem Inc.                    $117.91     -4.53%
+  BRO      Brown & Brown                 $63.14      -4.51%
+  Q        Qnity Electronics             $137.59     -4.35%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $173.11     -28.45%
+  ARE      Alexandria Real Estate Equit  $40.41      -15.48%
+  FCX      Freeport-McMoRan              $58.21      -13.85%
+  EFX      Equifax                       $171.71     -10.76%
+  ZBH      Zimmer Biomet                 $82.80      -10.67%
+  TMO      Thermo Fisher Scientific      $470.22     -10.36%
+  TECH     Bio-Techne                    $53.51      -10.32%
+  TSCO     Tractor Supply                $35.59      -10.06%
+  NOW      ServiceNow                    $90.49      -9.64%
+  RVTY     Revvity                       $85.18      -9.64%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  WARNING: Email could not be sent ([Errno 8] nodename nor servname provided, or not known). Monitor output was not emailed.
+  Data collected in 62.5s
+
+======================================================================
+  PORTFOLIO MONITOR  |  43 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  43 tickers monitored  |  0 with alerts (0 total)  |  43 unchanged
+  Compared against snapshot from: 2026-04-29 12:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  No alerts detected — email suppressed.
+  Data collected in 42.5s
+
+
+248 Failed downloads:
+['CTSH', 'HCA', 'HBAN', 'USB', 'HII', 'TDG', 'XEL', 'BR', 'SHW', 'ABT', 'DD', 'FSLR', 'TMUS', 'NTAP', 'TPR', 'WST', 'APP', 'TRV', 'GOOG', 'ANET', 'SOLV', 'DELL', 'INTU', 'APH', 'KO', 'FFIV', 'PAYX', 'TRMB', 'HSY', 'PODD', 'MCO', 'ADM', 'CARR', 'O', 'UPS', 'ESS', 'ETR', 'FDX', 'SW', 'EQT', 'DGX', 'CTRA', 'KMB', 'GD', 'NDSN', 'EBAY', 'EOG', 'WDC', 'MAR', 'COO', 'KEYS', 'OXY', 'KVUE', 'BLK', 'VTRS', 'DE', 'ACGL', 'CMCSA', 'CIEN', 'DASH', 'APTV', 'SO', 'ETN', 'AMP', 'WTW', 'PEG', 'TER', 'MTD', 'BMY']: OperationalError('unable to open database file')
+['FANG', 'CVX', 'CAT', 'NVR', 'BLDR', 'ACN', 'SYK', 'HIG', 'T', 'IP', 'HST', 'WMB', 'PEP', 'IT', 'FRT', 'DXCM', 'NVDA', 'GIS', 'ODFL', 'MRNA', 'TDY', 'CRWD', 'NI', 'STT', 'BALL', 'BDX', 'CBOE', 'SRE', 'KDP', 'GM', 'WY', 'DUK', 'ERIE', 'OKE', 'KLAC', 'HOOD', 'DOC', 'UNP', 'DTE', 'UBER', 'WYNN', 'COST', 'JNJ', 'NUE', 'ROK', 'DDOG', 'AMZN', 'LVS', 'CTVA', 'BKNG', 'KIM', 'RTX']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['GILD', 'NFLX', 'LII', 'NRG', 'GWW', 'GE', 'EXC', 'HSIC', 'LHX', 'LEN', 'ORLY', 'MDLZ', 'FTV', 'AFL', 'MET', 'CME', 'ABBV', 'Q', 'SNPS', 'MPC', 'ROST', 'SMCI', 'ADSK', 'PANW', 'CPB', 'MCHP', 'CB', 'WSM', 'FOX', 'ON', 'INTC', 'EXR', 'AEE', 'EW', 'HWM', 'NDAQ', 'PSA', 'SATS', 'NOC', 'CMG', 'UHS', 'PLD', 'RJF', 'XYL', 'PPL', 'BBY', 'BAX', 'AJG', 'HD', 'ALB', 'WRB', 'CBRE', 'SBUX', 'AEP', 'DOV', 'EPAM', 'DVA', 'AIG', 'ZTS', 'PFE', 'WM', 'EFX', 'RMD', 'FDS', 'NXPI', 'DAL', 'CRH', 'EQR', 'SNA', 'VLTO', 'HON', 'TMO', 'V', 'IVZ', 'CRL', 'SJM', 'ALLE', 'KEY', 'GEHC', 'UNH', 'LULU', 'FISV', 'PFG', 'FTNT', 'WFC', 'TTD', 'MAA', 'NTRS', 'C', 'GRMN', 'CNC', 'OMC', 'HPQ', 'SCHW', 'STE', 'GPC', 'MU', 'TAP', 'JBHT', 'FICO', 'AMD', 'AES', 'AVY', 'YUM', 'APD', 'MO', 'MCD', 'AMGN', 'CTAS', 'IEX', 'GS', 'MAS', 'TKO']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TROW']: SSLError('Failed to perform, curl: (35) Recv failure: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['ZBRA', 'CF', 'PSX', 'ROL']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DVN']: CertificateVerifyError('Failed to perform, curl: (60) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['EQIX']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 38: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TJX']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 9: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PLTR', 'PPG', 'CPAY', 'CDNS', 'LH', 'BRO']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $192.22   DCF implies $124.28 — 35% below market price
+  [-] MSFT    $424.46   DCF implies $213.79 — 50% below market price
+  [-] ALAB    $196.85   DCF implies $42.94 — 78% below market price
+  [-] SNPS    $481.22   DCF implies $196.20 — 59% below market price
+  [-] DDOG    $133.98   DCF implies $76.95 — 43% below market price
+  [-] AMBA    $65.94    DCF implies $11.58 — 82% below market price
+  [-] AMZN    $263.04   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (14 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $192.22   Earnings in 2 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] MSFT    $424.46   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] ALAB    $196.85   Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SMCI    $26.32    Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] NVO     $40.29    Earnings in 7 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $50.02    Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $137.97   Earnings in 5 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] META    $669.12   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AAPL    $270.17   Earnings in 1 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $147.75   Earnings in 1 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] PAYC    $127.93   Earnings in 7 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] AMD     $337.11   Earnings in 6 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] GOOG    $347.31   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+  [+] AMZN    $263.04   Earnings in 0 day(s) — 2026-04-29 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  17 with alerts (21 total)  |  27 unchanged
+  Compared against snapshot from: 2026-04-29 18:56 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  BF-B     Brown–Forman                  $24.87      -10.31%
+  CHTR     Charter Communications        $158.65     -8.35%
+  COIN     Coinbase                      $181.73     -6.37%
+  REGN     Regeneron Pharmaceuticals     $686.36     -6.21%
+  CSGP     CoStar Group                  $34.14      -5.06%
+  IR       Ingersoll Rand                $77.46      -4.59%
+  DECK     Deckers Brands                $101.34     -4.56%
+  VST      Vistra Corp.                  $153.79     -4.55%
+  ECL      Ecolab                        $256.61     -3.88%
+  EME      Emcor                         $833.37     -3.52%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $158.65     -34.57%
+  FCX      Freeport-McMoRan              $56.93      -19.09%
+  ZBH      Zimmer Biomet                 $80.07      -13.94%
+  NOW      ServiceNow                    $88.89      -13.76%
+  COHR     Coherent Corp.                $304.93     -12.99%
+  BF-B     Brown–Forman                  $24.87      -12.83%
+  RVTY     Revvity                       $82.26      -12.75%
+  WAT      Waters Corporation            $292.13     -12.64%
+  ORCL     Oracle Corporation            $163.83     -12.62%
+  PSKY     Paramount Skydance Corporati  $10.34      -12.37%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $158.65     -28.19%
+  TSCO     Tractor Supply                $34.77      -23.43%
+  CSGP     CoStar Group                  $34.14      -16.49%
+  NOW      ServiceNow                    $88.89      -15.32%
+  LMT      Lockheed Martin               $509.81     -14.83%
+  NKE      Nike, Inc.                    $44.39      -13.37%
+  LYB      LyondellBasell                $73.29      -11.03%
+  ARE      Alexandria Real Estate Equit  $41.05      -9.92%
+  XOM      ExxonMobil                    $154.67     -9.80%
+  CAG      Conagra Brands                $14.23      -9.54%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 63.0s
+
+
+270 Failed downloads:
+['DE', 'FICO', 'CBOE', 'CARR', 'CTVA', 'LULU', 'APD', 'SWKS', 'GEV', 'RF', 'ES', 'WELL', 'NXPI', 'CI', 'TSLA', 'GOOGL', 'VRTX', 'AEP', 'PFE', 'IBKR', 'KEY', 'EXPD', 'ODFL', 'LII', 'LVS', 'CRWD', 'HST', 'INTU', 'BR', 'UNP', 'GOOG', 'V', 'RJF', 'IDXX', 'XYL', 'AVY', 'REG', 'GS', 'MNST', 'MTB', 'DD', 'FRT', 'D', 'WM', 'VRT', 'TAP', 'ECL', 'ZBRA', 'LUV', 'LRCX', 'FISV', 'SNDK', 'CDNS', 'AAPL', 'DOC', 'AON', 'SPG', 'Q', 'NVDA', 'TGT', 'MCHP', 'EQT', 'TSCO', 'PRU', 'TFC', 'BKR', 'CME', 'MPWR', 'MAR', 'APO']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TPL', 'DHR', 'WFC', 'DTE', 'MRK', 'MTD', 'NWS', 'BDX', 'CLX', 'IT', 'GPN', 'ALL', 'UDR', 'MCD', 'NRG', 'OTIS', 'ED', 'EPAM', 'MOS', 'RVTY', 'XOM', 'LEN', 'ISRG', 'TMUS', 'FIX', 'AES', 'SWK', 'MDT', 'SMCI', 'SHW', 'HRL', 'DIS', 'EXR', 'AMCR', 'ORLY', 'EXE', 'KKR', 'ERIE', 'FAST', 'CAH', 'PYPL', 'SPGI', 'UPS', 'WTW', 'KO', 'PSX', 'MSFT', 'NCLH', 'COHR', 'CEG', 'NVR', 'HPE', 'BAX', 'LLY', 'IQV', 'MDLZ', 'SNPS', 'HUBB', 'SJM', 'AMGN', 'JKHY', 'CBRE', 'SCHW', 'BKNG', 'HWM', 'AXON', 'GILD', 'CCL', 'DVA', 'AMP', 'USB', 'GRMN', 'TSN', 'WYNN', 'PFG', 'NOW', 'COR', 'CNP', 'WST', 'ROL', 'REGN', 'COF', 'TTD', 'VZ', 'ATO', 'EMR', 'CNC', 'ON', 'BG', 'TPR', 'ALGN', 'EME', 'KMB', 'FITB', 'CINF', 'CVNA', 'FDS', 'XEL', 'AKAM', 'CRL', 'NEM', 'EOG', 'DOV', 'IFF', 'DAL', 'PCAR', 'MMM', 'UBER', 'LYV', 'AMD', 'PH', 'VST', 'LDOS', 'PGR', 'BSX', 'FTNT', 'AIG', 'ZTS', 'PLD', 'GM', 'ADSK', 'MSCI', 'ORCL', 'EIX', 'ABBV', 'AVGO', 'MU', 'SYF', 'BBY', 'ADBE', 'KVUE', 'BMY', 'NTRS', 'FOXA', 'ESS', 'ETR']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['RL', 'PSA', 'CPRT', 'TDY', 'DDOG', 'HLT', 'WDAY', 'STLD', 'BALL', 'T', 'TKO', 'MAS', 'HCA', 'HPQ', 'CSX', 'CAG', 'TRGP', 'COO', 'CRM', 'IRM', 'GEN', 'CAT', 'HAL', 'LOW', 'SRE', 'NKE', 'PEG', 'LH', 'BIIB', 'RCL', 'MSI', 'HOOD', 'GLW', 'NTAP', 'CTSH', 'TYL', 'MLM', 'AMAT', 'WBD', 'PEP', 'TXN', 'BRO', 'DRI', 'EFX', 'AME', 'L', 'BX', 'BK', 'AOS', 'POOL', 'BF-B', 'KHC', 'WRB', 'EVRG', 'ROK', 'TJX', 'WEC', 'PANW']: OperationalError('unable to open database file')
+['BEN', 'VTR']: SSLError('Failed to perform, curl: (35) TLS connect error: error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['AIZ']: SSLError('Failed to perform, curl: (35) Recv failure: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TXT']: SSLError('Failed to perform, curl: (35) Recv failure: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['MAA', 'SOLV']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (7 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $192.22   DCF implies $124.28 — 35% below market price
+  [-] MSFT    $424.46   DCF implies $213.79 — 50% below market price
+  [-] ALAB    $196.85   DCF implies $42.94 — 78% below market price
+  [-] SNPS    $481.22   DCF implies $196.20 — 59% below market price
+  [-] DDOG    $133.98   DCF implies $76.95 — 43% below market price
+  [-] AMBA    $65.94    DCF implies $11.58 — 82% below market price
+  [-] AMZN    $263.04   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (15 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $192.22   Earnings in 1 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] DKNG    $23.14    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] ALAB    $196.85   Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] CTRE    $38.95    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] SMCI    $26.32    Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SOUN    $7.71     Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] NVO     $40.29    Earnings in 6 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $50.02    Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $137.97   Earnings in 4 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] AAPL    $270.17   Earnings in 0 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $147.75   Earnings in 0 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] DDOG    $133.98   Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] PAYC    $127.93   Earnings in 6 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TTD     $24.37    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] AMD     $337.11   Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  19 with alerts (22 total)  |  25 unchanged
+  Compared against snapshot from: 2026-04-29 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  TER      Teradyne                      $306.33     -19.41%
+  GEHC     GE HealthCare                 $59.49      -13.16%
+  PODD     Insulet Corporation           $160.02     -12.50%
+  CHTR     Charter Communications        $158.65     -8.35%
+  COIN     Coinbase                      $181.73     -6.37%
+  BLDR     Builders FirstSource          $83.38      -5.38%
+  CSGP     CoStar Group                  $34.14      -5.06%
+  IR       Ingersoll Rand                $77.46      -4.59%
+  DECK     Deckers Brands                $101.34     -4.56%
+  ACGL     Arch Capital Group            $92.72      -4.47%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $158.65     -34.57%
+  TER      Teradyne                      $306.33     -20.47%
+  FCX      Freeport-McMoRan              $56.93      -19.09%
+  MRNA     Moderna                       $45.72      -17.77%
+  PODD     Insulet Corporation           $160.02     -17.35%
+  GEHC     GE HealthCare                 $59.49      -16.66%
+  ZBH      Zimmer Biomet                 $80.07      -13.94%
+  WAT      Waters Corporation            $292.13     -12.64%
+  PSKY     Paramount Skydance Corporati  $10.34      -12.37%
+  ARE      Alexandria Real Estate Equit  $41.05      -12.00%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $158.65     -28.19%
+  PODD     Insulet Corporation           $160.02     -23.07%
+  CSGP     CoStar Group                  $34.14      -16.49%
+  LMT      Lockheed Martin               $509.81     -14.83%
+  NOC      Northrop Grumman              $572.41     -14.77%
+  GEHC     GE HealthCare                 $59.49      -13.46%
+  APTV     Aptiv                         $58.33      -12.47%
+  HSY      Hershey Company (The)         $189.16     -11.42%
+  LYB      LyondellBasell                $73.29      -11.03%
+  ARE      Alexandria Real Estate Equit  $41.05      -9.92%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 68.4s
+
+
+222 Failed downloads:
+['MET', 'CAH', 'J', 'MS', 'YUM', 'HSIC', 'APO', 'NEE', 'WSM', 'LRCX', 'PNW', 'NCLH', 'NVR', 'DOC', 'HII', 'XYZ', 'AWK', 'DGX', 'ICE', 'GWW', 'MOS', 'CEG', 'RJF', 'TSCO', 'COST', 'HPE', 'JCI', 'CMS', 'EVRG', 'AIG', 'TFC', 'EIX', 'AMAT', 'AFL', 'DVA', 'IEX', 'TKO', 'AXON', 'TRV', 'LLY', 'IFF', 'UAL', 'CASY', 'NOC', 'CCI', 'VICI', 'CTVA', 'LH', 'ODFL', 'GEN', 'HUM', 'ROK', 'CPAY', 'BMY', 'ADM', 'ALLE', 'INTU', 'AEP', 'ZTS', 'PH', 'AVGO', 'JBL', 'DOV', 'FTNT', 'CARR', 'BKNG', 'LYV', 'SPGI', 'Q', 'SWKS', 'BDX', 'GRMN', 'WELL', 'KR', 'FDX', 'DLTR', 'WAB', 'HAS', 'MKC', 'SNA', 'WM', 'CIEN', 'QCOM', 'CPB', 'SNDK', 'ITW', 'NVDA', 'PEG', 'ISRG', 'FCX', 'AME', 'MAR', 'MA', 'SMCI', 'PTC', 'GPN', 'HRL', 'RVTY', 'KLAC', 'CTAS']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['HIG', 'SYY', 'MPC', 'CRWD', 'L', 'MCK', 'CAG', 'OTIS', 'ALB', 'AMGN', 'POOL', 'PSX', 'AAPL', 'GS', 'INTC', 'MMM', 'CPT', 'NDAQ', 'KDP', 'FDS', 'PWR', 'PNC', 'DOW', 'DE', 'CNC', 'IP', 'BEN', 'NKE', 'IBM', 'MLM', 'UPS', 'TT', 'EQIX', 'FANG', 'MO', 'EBAY', 'NOW', 'IR', 'EXC', 'TECH', 'AIZ', 'COP', 'MAA', 'NRG', 'IDXX', 'ALGN', 'FIS', 'WTW', 'KEYS', 'DXCM', 'WEC', 'CBRE']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['XEL', 'ED', 'SPG', 'CF', 'LYB', 'SCHW', 'PPL', 'NXPI', 'PNR', 'AMT', 'SW', 'CI', 'AVB', 'FRT', 'NUE', 'AXP', 'BKR', 'FTV', 'HLT', 'AON', 'STLD', 'LII', 'SYK', 'GNRC', 'CNP', 'HPQ', 'TJX', 'VLO', 'NWS', 'HCA', 'SOLV', 'EMR', 'TGT', 'ZBRA', 'SHW', 'PODD', 'SO', 'GIS', 'LNT', 'MDLZ', 'PKG', 'LHX', 'MCD', 'TTWO', 'COF', 'CHD', 'BAX', 'GILD', 'MSCI', 'MRK', 'CCL', 'MTB', 'DIS', 'PFG', 'CINF', 'CRL', 'HD', 'BA', 'PYPL']: OperationalError('unable to open database file')
+['T']: SSLError('Failed to perform, curl: (35) TLS connect error: error:00000000:invalid library (0):OPENSSL_internal:invalid library (0). See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['CBOE']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 38: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['CTRA', 'WMT']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 9: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['VST', 'RSG', 'SJM']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['COIN', 'UDR', 'NTRS', 'AES']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $193.29   DCF implies $124.28 — 36% below market price
+  [-] MSFT    $402.61   DCF implies $213.79 — 47% below market price
+  [-] HAL     $42.20    RSI crossed above 70 — now 70.1 (overbought)
+  [-] ALAB    $191.46   DCF implies $42.94 — 78% below market price
+  [-] SNPS    $480.08   DCF implies $196.20 — 59% below market price
+  [-] DDOG    $132.73   DCF implies $76.95 — 42% below market price
+  [-] AMBA    $68.01    RSI crossed above 70 — now 72.6 (overbought)
+  [-] AMBA    $68.01    DCF implies $11.58 — 83% below market price
+  [-] AMZN    $258.47   DCF implies $51.53 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (15 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $193.29   Earnings in 1 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] DKNG    $23.29    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] ALAB    $191.46   Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] CTRE    $39.07    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] SMCI    $27.28    Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SOUN    $7.92     Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] NVO     $42.32    Earnings in 6 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $54.83    Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $139.30   Earnings in 4 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] AAPL    $271.89   Earnings in 0 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $145.68   Earnings in 0 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] DDOG    $132.73   Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] PAYC    $127.48   Earnings in 6 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TTD     $23.77    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] AMD     $347.47   Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  20 with alerts (24 total)  |  24 unchanged
+  Compared against snapshot from: 2026-04-30 12:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  META     Meta Platforms                $608.80     -9.01%
+  FICO     Fair Isaac                    $978.00     -6.28%
+  HUBB     Hubbell Incorporated          $514.14     -5.82%
+  BLDR     Builders FirstSource          $78.95      -5.31%
+  MSFT     Microsoft                     $403.48     -4.94%
+  BR       Broadridge Financial Solutio  $152.87     -4.90%
+  BRO      Brown & Brown                 $59.18      -3.99%
+  CVNA     Carvana                       $380.75     -3.99%
+  AJG      Arthur J. Gallagher & Co.     $203.52     -3.91%
+  AOS      A. O. Smith                   $61.56      -3.33%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $162.22     -32.91%
+  CMCSA    Comcast                       $26.98      -14.74%
+  GEHC     GE HealthCare                 $60.04      -14.09%
+  BSX      Boston Scientific             $57.11      -13.06%
+  TER      Teradyne                      $348.71     -13.04%
+  BLDR     Builders FirstSource          $78.95      -12.41%
+  BRO      Brown & Brown                 $59.18      -12.39%
+  ERIE     Erie Indemnity                $218.10     -12.37%
+  HOOD     Robinhood Markets             $73.22      -12.35%
+  ARE      Alexandria Real Estate Equit  $41.05      -11.49%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $162.22     -24.86%
+  EPAM     EPAM Systems                  $112.50     -16.91%
+  GEHC     GE HealthCare                 $60.04      -15.60%
+  LMT      Lockheed Martin               $511.90     -15.30%
+  CSGP     CoStar Group                  $34.37      -14.80%
+  CTSH     Cognizant                     $52.88      -13.80%
+  APTV     Aptiv                         $60.20      -13.31%
+  ERIE     Erie Indemnity                $218.10     -12.71%
+  COO      Cooper Companies (The)        $62.91      -12.01%
+  ARE      Alexandria Real Estate Equit  $41.05      -11.57%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 68.8s
+
+
+216 Failed downloads:
+['VST', 'HLT', 'TER', 'WDAY', 'CDNS', 'DE', 'D', 'MRSH', 'ETR', 'TDG', 'SNPS', 'META', 'FTNT', 'FIX', 'BK', 'MSFT', 'HUBB', 'SYF', 'SJM', 'UNH', 'MDLZ', 'OXY', 'MCD', 'RTX', 'STX', 'IDXX', 'DLR', 'AMGN', 'ETN', 'EBAY', 'ODFL', 'WMT', 'PTC', 'CTSH', 'PNW', 'VLTO', 'SNDK', 'PCG', 'FANG', 'MSI', 'LMT', 'CTVA', 'DVA', 'WRB', 'FOX', 'CBRE', 'KMI', 'GM', 'BF-B', 'J', 'AMP', 'BLK', 'VRTX', 'AFL', 'CNP', 'MCK']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['UNP', 'PSX', 'DIS', 'VTR', 'NCLH', 'MPC', 'BXP', 'JBL', 'CF', 'AEE', 'LRCX', 'A', 'INCY', 'APH', 'GILD', 'ELV', 'SBAC', 'PODD', 'KHC', 'SLB', 'MCHP', 'NXPI', 'CEG', 'PCAR', 'COHR', 'HSY', 'XYL', 'CLX', 'WBD', 'O', 'BRO', 'AAPL', 'VTRS', 'CSCO', 'WEC', 'MTD', 'NEE', 'DDOG', 'GLW', 'KEYS', 'RCL', 'CME', 'BEN', 'FICO', 'HRL', 'NDAQ', 'PNR', 'LII', 'BLDR', 'HWM', 'STLD', 'JKHY', 'AWK', 'PYPL', 'GEV', 'EPAM', 'CFG', 'REGN', 'EXR', 'GEN', 'TSCO', 'PH', 'CSGP', 'ZBRA', 'YUM', 'GPC', 'WAT', 'TECH', 'AIZ', 'MA', 'ARES', 'LH', 'CARR', 'EXPD', 'T', 'SNA', 'TXT', 'NWSA', 'PFG', 'SW', 'EFX', 'GEHC', 'CAG', 'ROK', 'CVS', 'TYL', 'FDX', 'FFIV', 'BX', 'ARE', 'FISV', 'TGT', 'IFF', 'JPM', 'WY', 'SYY', 'C', 'V', 'RMD']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['FTV', 'AXP', 'TFC', 'PKG', 'IQV']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['CPB', 'CVX', 'CHTR', 'GIS', 'ORLY', 'TMUS', 'SBUX', 'PPL', 'CTRA', 'ACGL', 'INVH', 'ADBE', 'UAL', 'KEY', 'TSN', 'COO', 'WELL', 'HBAN', 'VZ', 'ALGN', 'MRNA', 'LULU', 'SYK', 'IEX', 'CRL', 'SWKS', 'EQR', 'L', 'CDW', 'KVUE', 'CMG', 'MKC', 'BAX', 'EXC', 'PGR', 'ES', 'VMC', 'SCHW', 'JCI', 'NVDA', 'EG', 'AVB', 'HPQ', 'AME', 'PEG', 'DOV', 'PSA', 'QCOM', 'BBY', 'CRWD', 'APD', 'PWR', 'LITE']: OperationalError('unable to open database file')
+['AXON', 'ORCL']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 9: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['VLO']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 38: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (8 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $193.31   DCF implies $124.28 — 36% below market price
+  [-] MSFT    $407.78   DCF implies $213.79 — 48% below market price
+  [-] ALAB    $194.74   DCF implies $42.94 — 78% below market price
+  [-] SNPS    $482.60   DCF implies $196.20 — 59% below market price
+  [-] DDOG    $132.19   DCF implies $76.95 — 42% below market price
+  [-] AMBA    $68.80    DCF implies $11.58 — 83% below market price
+  [-] AMZN    $265.06   RSI crossed above 70 — now 76.5 (overbought)
+  [-] AMZN    $265.06   DCF implies $51.53 — 81% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (15 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $193.31   Earnings in 1 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] DKNG    $23.32    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] ALAB    $194.74   Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] CTRE    $39.45    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] SMCI    $27.40    Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SOUN    $7.96     Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] NVO     $42.22    Earnings in 6 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $55.48    Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $139.11   Earnings in 4 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] AAPL    $271.35   Earnings in 0 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] RDDT    $147.23   Earnings in 0 day(s) — 2026-04-30 (upcoming catalyst)
+  [+] DDOG    $132.19   Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] PAYC    $126.76   Earnings in 6 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TTD     $23.59    Earnings in 7 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] AMD     $354.49   Earnings in 5 day(s) — 2026-05-05 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  19 with alerts (23 total)  |  25 unchanged
+  Compared against snapshot from: 2026-04-30 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  WTW      Willis Towers Watson          $256.20     -11.69%
+  IP       International Paper           $30.42      -9.41%
+  CAH      Cardinal Health               $192.88     -4.90%
+  BR       Broadridge Financial Solutio  $153.98     -4.21%
+  KLAC     KLA Corporation               $1750.35    -3.63%
+  AON      Aon plc                       $311.65     -3.36%
+  BKNG     Booking Holdings              $168.36     -3.23%
+  TTD      Trade Desk (The)              $23.59      -3.20%
+  FE       FirstEnergy                   $47.52      -2.90%
+  AOS      A. O. Smith                   $61.84      -2.89%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CMCSA    Comcast                       $27.04      -14.54%
+  HOOD     Robinhood Markets             $72.89      -12.75%
+  BSX      Boston Scientific             $57.61      -12.30%
+  ERIE     Erie Indemnity                $218.93     -12.04%
+  WTW      Willis Towers Watson          $256.20     -11.93%
+  ZBH      Zimmer Biomet                 $82.43      -10.83%
+  IP       International Paper           $30.42      -9.30%
+  PSKY     Paramount Skydance Corporati  $10.24      -9.14%
+  DPZ      Domino's                      $339.42     -8.85%
+  HCA      HCA Healthcare                $434.45     -8.35%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 65.4s
+
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  0 with alerts (0 total)  |  44 unchanged
+  Compared against snapshot from: 2026-04-30 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  WARNING: Email could not be sent ([Errno 8] nodename nor servname provided, or not known). Monitor output was not emailed.
+  Data collected in 0.2s
+
+
+267 Failed downloads:
+['CAT', 'PM', 'EQIX', 'BR', 'LMT', 'APP', 'LYV', 'DG', 'MPC', 'RMD', 'NXPI', 'INCY', 'USB', 'CARR', 'REG', 'ROK', 'EQT', 'CRWD', 'FRT', 'TKO', 'HSIC', 'SLB', 'CTSH', 'STT', 'VMC', 'TSCO', 'AMAT', 'MSI', 'CMCSA', 'TYL', 'UNH', 'ANET', 'TGT', 'ADI', 'GLW', 'UDR', 'CMI', 'ALGN', 'APTV', 'MDT', 'RSG', 'CI', 'WBD', 'WDC', 'CSGP', 'AIG', 'GEN', 'DLTR', 'LII', 'MOS', 'BBY', 'CIEN', 'MAS', 'VRSN', 'WRB', 'IDXX', 'AMD', 'SYY', 'TMUS', 'INTC', 'PEG', 'DUK', 'CCL', 'BG', 'TRMB', 'LIN', 'DECK', 'FOXA']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['VST', 'BEN', 'CRM', 'WM', 'AXP', 'FIX', 'MRNA', 'ERIE', 'ODFL', 'AME', 'HRL', 'VTRS', 'IBM', 'MKC', 'BLDR', 'GS', 'XEL', 'CPRT', 'L', 'WSM', 'LOW', 'NSC', 'DRI', 'CPT', 'CVS', 'IBKR', 'KEYS', 'INTU', 'ADSK', 'ABT', 'OMC', 'NWS', 'PH', 'MAA', 'OXY', 'RTX', 'A', 'NWSA', 'EXE', 'NOW', 'SWK', 'FCX', 'FFIV', 'PNC', 'FTV', 'STLD', 'DXCM', 'BAX', 'NVDA', 'DOV', 'MAR', 'HSY', 'ROP', 'CRH', 'SPG', 'EW', 'RVTY', 'ON', 'VRTX', 'PG', 'J', 'GEHC', 'DHI', 'AVB', 'PFG', 'WYNN', 'SJM', 'PLD', 'AES', 'AEP', 'AJG', 'FITB', 'GRMN', 'GD', 'PTC', 'AVGO', 'EXPE', 'BDX', 'RF', 'AMGN', 'PPL', 'DDOG', 'GEV', 'COP', 'TRGP', 'QCOM', 'PFE', 'LHX', 'BRO', 'FTNT', 'ABNB', 'META', 'AMP', 'PPG', 'HPE', 'ESS', 'STZ', 'IVZ', 'O', 'WY', 'XYZ', 'KMB', 'TFC', 'CSCO', 'COO', 'CHTR', 'KR', 'VRSK', 'KKR', 'EFX', 'INVH', 'JCI', 'HII', 'HUBB', 'CAG', 'TDG', 'XOM', 'MCD', 'VICI', 'AFL', 'PWR', 'TAP', 'POOL', 'DASH', 'ECL', 'LRCX', 'AMZN', 'AXON', 'PGR', 'MDLZ', 'PKG', 'WAT', 'TPR', 'STE', 'ELV', 'MS', 'TSN', 'NDAQ', 'IEX', 'APD', 'SCHW', 'PAYX', 'ALLE', 'SWKS']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['DVA', 'TDY', 'TER', 'TXT', 'DOC', 'UBER', 'REGN', 'NI', 'KLAC', 'ATO', 'FDS', 'GL', 'HBAN', 'HST', 'CHRW', 'MTB', 'SNDK', 'GIS', 'PNR', 'PSX', 'CLX', 'NKE', 'CEG', 'EL', 'CBRE', 'BK', 'DTE', 'GWW', 'FOX', 'LITE', 'C', 'NEM', 'HAL', 'MTD', 'JBL', 'BXP', 'ACGL', 'T', 'BALL', 'HUM', 'EMR']: OperationalError('unable to open database file')
+['IP', 'NEE', 'LUV', 'CDW', 'MCO', 'TRV', 'KEY', 'PYPL', 'SW', 'MA', 'DPZ']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['MRSH']: SSLError('Failed to perform, curl: (35) Recv failure: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['SBAC', 'JPM']: ConnectionError('Failed to perform, curl: (7) getsockname() failed with errno 9: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (9 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $190.63   DCF implies $124.28 — 35% below market price
+  [-] MSFT    $414.44   DCF implies $213.71 — 48% below market price
+  [-] ALAB    $202.68   DCF implies $42.94 — 79% below market price
+  [-] SNPS    $489.02   DCF implies $196.20 — 60% below market price
+  [-] RDDT    $166.48   DCF implies $121.43 — 27% below market price
+  [-] DDOG    $140.53   DCF implies $76.42 — 46% below market price
+  [-] AMBA    $71.56    DCF implies $11.58 — 84% below market price
+  [-] GOOG    $383.22   DCF implies $298.65 — 22% below market price
+  [-] AMZN    $268.26   DCF implies $51.53 — 81% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (13 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] CVX     $190.63   Earnings in 0 day(s) — 2026-05-01 (upcoming catalyst)
+  [+] DKNG    $23.00    Earnings in 6 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] ALAB    $202.68   Earnings in 4 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] CTRE    $39.19    Earnings in 6 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] SMCI    $27.09    Earnings in 4 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SOUN    $9.56     Earnings in 6 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] NVO     $43.88    Earnings in 5 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $55.00    Earnings in 4 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $144.07   Earnings in 3 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] DDOG    $140.53   Earnings in 6 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] PAYC    $131.96   Earnings in 5 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TTD     $24.24    Earnings in 6 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] AMD     $360.54   Earnings in 4 day(s) — 2026-05-05 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  19 with alerts (22 total)  |  25 unchanged
+  Compared against snapshot from: 2026-05-01 16:01 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  SYK      Stryker Corporation           $294.73     -6.47%
+  BMY      Bristol Myers Squibb          $58.22      -3.91%
+  APH      Amphenol                      $142.30     -3.37%
+  CVNA     Carvana                       $382.60     -3.34%
+  LULU     Lululemon Athletica           $133.58     -2.99%
+  AZO      AutoZone                      $3594.08    -2.97%
+  CMG      Chipotle Mexican Grill        $32.98      -2.97%
+  CTAS     Cintas                        $169.61     -2.92%
+  ORLY     O’Reilly Automotive           $96.67      -2.75%
+  MMM      3M                            $142.50     -2.74%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  HOOD     Robinhood Markets             $73.66      -13.04%
+  ARE      Alexandria Real Estate Equit  $41.39      -12.68%
+  WTW      Willis Towers Watson          $256.34     -10.91%
+  SYK      Stryker Corporation           $294.73     -10.01%
+  BF-B     Brown–Forman                  $25.55      -9.75%
+  ZBH      Zimmer Biomet                 $82.90      -9.16%
+  BSX      Boston Scientific             $56.50      -8.97%
+  PCAR     Paccar                        $116.08     -8.60%
+  PODD     Insulet Corporation           $175.04     -7.66%
+  LULU     Lululemon Athletica           $133.58     -7.11%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 60.2s
+
+
+251 Failed downloads:
+['AKAM', 'CTSH', 'URI', 'AES', 'BAX', 'MCO', 'DRI', 'BLK', 'CSX', 'BK', 'PHM', 'SHW', 'JBHT', 'TXT', 'BRO', 'VTRS', 'EA', 'FIX', 'LOW', 'MO', 'OXY', 'NWSA', 'IVZ', 'AME', 'FDX', 'ECL', 'UHS', 'WEC', 'PFG', 'CRM', 'CPRT', 'CAG', 'SYF', 'HII', 'MCD', 'GM', 'FE', 'HPQ', 'ABT', 'BKNG', 'COST', 'FSLR', 'CRWD', 'SNPS', 'EPAM', 'MCHP', 'REG', 'DD', 'PSA', 'FTNT', 'POOL', 'INVH', 'GE', 'HUBB', 'DASH', 'JPM', 'CME', 'MA', 'WDAY', 'TTWO', 'LII', 'SYK', 'MRNA', 'DOW', 'ADP', 'NDAQ', 'CDW', 'DVA', 'PTC', 'VRSK', 'FTV', 'ORCL', 'MAA', 'CB', 'BXP', 'WELL', 'DPZ', 'F', 'NEM', 'EOG', 'TJX', 'SBAC', 'SCHW', 'DELL', 'KLAC', 'MPC', 'KMB', 'LRCX', 'MPWR', 'GEHC', 'PNR', 'AJG', 'MGM', 'RF', 'ANET', 'ALL', 'XEL', 'EQT', 'PCG', 'STT', 'XYZ', 'VRSN', 'TRMB', 'HD', 'LMT', 'COF', 'PG', 'WYNN', 'WFC', 'AMAT', 'XYL', 'ETR', 'CMG', 'VICI', 'MET', 'EG', 'WRB', 'DHI', 'AVB', 'TRV', 'PWR', 'CMCSA', 'TGT', 'BSX', 'MMM', 'NVR', 'DOC', 'JKHY', 'ODFL', 'FIS', 'WSM', 'Q', 'EXPD', 'EME', 'EBAY', 'HLT', 'HPE', 'ZBH', 'DHR']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['A', 'HST', 'C', 'UNP', 'APP', 'LULU', 'EFX', 'UAL', 'CTVA', 'CAH', 'WAB', 'KIM', 'CCL', 'GIS', 'DGX', 'ISRG', 'HON', 'RJF', 'CFG', 'AZO', 'ERIE', 'MTD', 'FOXA', 'WBD', 'J', 'ON', 'UNH', 'AWK', 'GRMN', 'DAL', 'UPS', 'EXE', 'IEX', 'FRT', 'ORLY', 'BKR', 'AON', 'BA', 'TSLA', 'OMC', 'DUK', 'DTE', 'ALGN', 'CARR', 'XOM', 'NTRS', 'DDOG', 'ESS', 'PLTR', 'DVN', 'ZTS']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['ED', 'GL', 'OTIS', 'CNP']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['TER', 'TMUS', 'EXPE', 'GILD', 'VMC', 'DG', 'LYB', 'BIIB', 'APO', 'EQIX', 'NEE', 'GOOG', 'SO', 'BG', 'AXP', 'SWK', 'VRTX', 'CLX', 'NI', 'TRGP', 'WST', 'TEL', 'RVTY', 'CEG', 'SWKS', 'YUM', 'ADI', 'BR', 'AAPL', 'SRE', 'FDS', 'BAC', 'CSCO', 'MAR', 'ACGL', 'IFF', 'NRG', 'VTR', 'ES', 'GDDY', 'KHC', 'ITW', 'AIZ', 'BF-B', 'OKE', 'ADSK', 'CHRW', 'AIG', 'ACN', 'PCAR']: OperationalError('unable to open database file')
+['AOS']: ConnectionError('Failed to perform, curl: (7) getsockname() failed with errno 38: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['AFL', 'MS']: SSLError('Failed to perform, curl: (35) TLS connect error: error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['MU']: ConnectionError('Failed to perform, curl: (56) Recv failure: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['CPAY']: Timeout('Failed to perform, curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['PANW', 'WDC']: Timeout('Failed to perform, curl: (28) Resolving timed out after 10000 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (0 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  No alerts.
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (12 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $191.77   DCF implies $124.28 — 35% below market price
+  [-] MSFT    $414.98   DCF implies $213.71 — 48% below market price
+  [-] ALAB    $203.23   DCF implies $42.94 — 79% below market price
+  [-] SOUN    $9.78     RSI crossed above 70 — now 70.0 (overbought)
+  [-] SNPS    $493.33   DCF implies $196.20 — 60% below market price
+  [-] NVO     $44.13    RSI crossed above 70 — now 70.2 (overbought)
+  [-] RDDT    $166.80   DCF implies $121.43 — 27% below market price
+  [-] DDOG    $144.25   DCF implies $76.42 — 47% below market price
+  [-] ISRG    $451.61   DCF implies $111.19 — 75% below market price
+  [-] AMBA    $70.58    DCF implies $11.58 — 84% below market price
+  [-] GOOG    $379.98   DCF implies $298.65 — 21% below market price
+  [-] AMZN    $271.17   DCF implies $51.53 — 81% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (13 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] DKNG    $23.54    Earnings in 3 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] RGTI    $18.33    Earnings in 7 day(s) — 2026-05-11 (upcoming catalyst)
+  [+] ALAB    $203.23   Earnings in 1 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] CTRE    $39.41    Earnings in 3 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] SMCI    $27.75    Earnings in 1 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] SOUN    $9.78     Earnings in 3 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] NVO     $44.13    Earnings in 2 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TEM     $54.73    Earnings in 1 day(s) — 2026-05-05 (upcoming catalyst)
+  [+] PLTR    $146.38   Earnings in 0 day(s) — 2026-05-04 (upcoming catalyst)
+  [+] DDOG    $144.25   Earnings in 3 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] PAYC    $134.38   Earnings in 2 day(s) — 2026-05-06 (upcoming catalyst)
+  [+] TTD     $24.36    Earnings in 3 day(s) — 2026-05-07 (upcoming catalyst)
+  [+] AMD     $341.81   Earnings in 1 day(s) — 2026-05-05 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  21 with alerts (25 total)  |  23 unchanged
+  Compared against snapshot from: 2026-05-01 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  NCLH     Norwegian Cruise Line Holdin  $17.25      -8.32%
+  L        Loews Corporation             $105.11     -5.90%
+  AMD      Advanced Micro Devices        $341.77     -5.21%
+  QCOM     Qualcomm                      $168.62     -4.74%
+  CRH      CRH plc                       $111.18     -3.69%
+  LVS      Las Vegas Sands               $51.88      -3.55%
+  LEN      Lennar                        $85.61      -3.21%
+  PPG      PPG Industries                $104.08     -3.19%
+  ZBRA     Zebra Technologies            $220.29     -2.99%
+  CHD      Church & Dwight               $93.19      -2.95%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  BLDR     Builders FirstSource          $74.21      -17.43%
+  WTW      Willis Towers Watson          $257.25     -11.09%
+  PH       Parker Hannifin               $867.51     -10.96%
+  META     Meta Platforms                $608.80     -10.29%
+  ALLE     Allegion                      $133.20     -10.24%
+  ARE      Alexandria Real Estate Equit  $41.12      -9.73%
+  NVDA     Nvidia                        $195.68     -9.66%
+  CVNA     Carvana                       $371.45     -8.67%
+  HOOD     Robinhood Markets             $76.81      -8.51%
+  IR       Ingersoll Rand                $76.94      -8.42%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  Data unavailable.
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 58.3s
+

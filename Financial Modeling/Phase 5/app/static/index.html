@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Stock Report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d0f18;color:#dde1f0;min-height:100vh}
+
+/* ── Header ── */
+.hdr{background:#13162a;padding:16px;text-align:center;position:sticky;top:0;z-index:100;border-bottom:1px solid #1e2240}
+.hdr h1{font-size:1rem;color:#6890f8;letter-spacing:.05em;margin-bottom:12px;text-transform:uppercase}
+.search{display:flex;gap:8px;max-width:420px;margin:0 auto}
+.search input{flex:1;padding:11px 14px;border-radius:8px;border:1px solid #2a2d4a;background:#1a1d35;color:#fff;font-size:1rem;outline:none}
+.search input:focus{border-color:#6890f8}
+.search button{padding:11px 20px;border-radius:8px;border:none;background:#6890f8;color:#fff;font-weight:700;font-size:.95rem;cursor:pointer;white-space:nowrap}
+.search button:disabled{opacity:.45;cursor:not-allowed}
+
+/* ── Status ── */
+.status{text-align:center;padding:40px 20px;color:#666;font-size:.9rem}
+.status.err{color:#e05252}
+.spinner{display:inline-block;width:18px;height:18px;border:2.5px solid #333;border-top-color:#6890f8;border-radius:50%;animation:spin .75s linear infinite;vertical-align:middle;margin-right:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── Report layout ── */
+.report{max-width:780px;margin:0 auto;padding:16px;display:none}
+
+/* ── Cards ── */
+.card{background:#13162a;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #1e2240}
+.card-title{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#556;margin-bottom:14px}
+
+/* ── Cover ── */
+.tkr{font-size:2.6rem;font-weight:800;color:#fff}
+.co-name{color:#889;font-size:.9rem;margin:4px 0 12px}
+.price-big{font-size:1.9rem;font-weight:700;color:#6890f8}
+.mcap-line{color:#667;font-size:.85rem;margin-top:4px}
+.badge{display:inline-block;padding:6px 16px;border-radius:20px;font-weight:700;font-size:.9rem;margin-top:14px}
+.b-top{background:#173328;color:#2ecc71}.b-watch{background:#2e2110;color:#e67e22}.b-no{background:#2e1010;color:#e74c3c}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.crit{display:flex;align-items:center;gap:7px;font-size:.8rem}
+.cp{color:#2ecc71}.cf{color:#e74c3c}
+
+/* ── KV grid ── */
+.kv-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kv label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.07em;color:#556;margin-bottom:3px}
+.kv span{font-size:.95rem;font-weight:600;color:#dde1f0}
+.pos{color:#2ecc71!important}.neg{color:#e74c3c!important}.neu{color:#e67e22!important}
+
+/* ── Signal ── */
+.signal{padding:10px 14px;border-radius:8px;font-weight:600;font-size:.85rem;margin-top:14px}
+.s-entry{background:#173328;color:#2ecc71}
+.s-death,.s-over{background:#2e1010;color:#e74c3c}
+.s-neutral{background:#1a1f38;color:#889}
+
+/* ── Tables ── */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:.8rem}
+th{background:#1a1d35;color:#667;text-align:left;padding:8px 10px;font-weight:500;white-space:nowrap}
+td{padding:7px 10px;border-bottom:1px solid #1a1d35;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+.td-r{text-align:right;font-variant-numeric:tabular-nums}
+.g{background:#172a20;color:#2ecc71}.r{background:#2a1212;color:#e74c3c}.y{background:#2a2210;color:#e6c321}
+
+/* ── DCF rows ── */
+.dcf-r{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;border-bottom:1px solid #1a1d35;font-size:.86rem}
+.dcf-r:last-child{border-bottom:none}
+.dcf-lbl{color:#889}.dcf-val{font-weight:600}
+.sec-hdr{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:#445;padding:12px 0 4px}
+
+/* ── MC ── */
+.mc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.mc-box{text-align:center;background:#1a1d35;border-radius:8px;padding:10px 6px}
+.mc-box label{display:block;font-size:.68rem;color:#667;margin-bottom:4px}
+.mc-box span{font-size:.95rem;font-weight:700}
+.chart-wrap{position:relative;height:150px}
+
+/* ── SEC ── */
+.sec-sec{margin-bottom:14px}
+.sec-ttl{font-size:.82rem;font-weight:700;color:#6890f8;margin-bottom:5px}
+.sec-body{font-size:.8rem;line-height:1.6;color:#aab;max-height:160px;overflow:hidden;position:relative}
+.sec-body.open{max-height:none}
+.sec-body.open::after{display:none}
+.sec-body::after{content:'';display:block;height:30px;background:linear-gradient(transparent,#13162a);position:absolute;bottom:0;left:0;right:0}
+.read-more{font-size:.76rem;color:#6890f8;cursor:pointer;margin-top:4px;display:inline-block}
+.note{font-size:.76rem;color:#e67e22;font-style:italic;margin-top:8px}
+.footer{text-align:center;padding:24px 0 48px;font-size:.72rem;color:#445}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>Stock Report Generator</h1>
+  <div class="search">
+    <input id="inp" type="text" placeholder="Ticker — e.g. AAPL" maxlength="10" autocapitalize="characters" autocomplete="off">
+    <button id="btn" onclick="run()">Generate</button>
+  </div>
+</div>
+
+<div id="st" class="status">Enter a ticker above to generate a full investment report.</div>
+<div id="rpt" class="report"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+
+document.getElementById('inp').addEventListener('keydown',e=>{if(e.key==='Enter')run()});
+
+async function run(){
+  const ticker=$('inp').value.trim().toUpperCase();
+  if(!ticker)return;
+  const btn=$('btn'),st=$('st'),rpt=$('rpt');
+  btn.disabled=true;
+  rpt.style.display='none';
+  rpt.innerHTML='';
+  st.className='status';
+  st.innerHTML=`<span class="spinner"></span>Fetching data for <strong>${ticker}</strong> — this takes 30–60 s…`;
+  try{
+    const res=await fetch(`/api/report/${ticker}`);
+    if(!res.ok){const e=await res.json();throw new Error(e.detail||'Server error');}
+    const d=await res.json();
+    render(d);
+    rpt.style.display='block';
+    st.innerHTML='';
+  }catch(e){
+    st.className='status err';
+    st.innerHTML='Error: '+e.message;
+  }finally{btn.disabled=false;}
+}
+
+/* ── formatters ── */
+const N=()=>'N/A';
+function fp(v,d=1){return v==null?N():`${(v*100).toFixed(d)}%`}
+function fpn(v){return v==null?N():`${v>=0?'+':''}${(v*100).toFixed(2)}%`}
+function fb(v){return v==null?N():`$${(v/1e9).toFixed(2)}B`}
+function fx(v,d=1){return v==null?N():`${v.toFixed(d)}x`}
+function fd(v,d=2){return v==null?N():`$${v.toFixed(d)}`}
+function fi(v){return v==null?N():`$${Math.round(v)}`}
+
+function sigCls(s){
+  if(s.includes('ENTRY'))return 's-entry';
+  if(s.includes('DEATH')||s.includes('OVERBOUGHT'))return 's-death';
+  if(s.includes('OVERSOLD'))return 's-over';
+  return 's-neutral';
+}
+
+function render(d){
+  const r=$('rpt');
+  r.innerHTML='';
+
+  /* ── COVER ── */
+  const sc=d.screener;
+  const bc=sc.score>=6?'b-top':sc.score>=3?'b-watch':'b-no';
+  const crit=Object.entries(sc.criteria).map(([k,v])=>
+    `<div class="crit"><span class="${v?'cp':'cf'}">${v?'●':'○'}</span><span>${k}</span></div>`
+  ).join('');
+  r.innerHTML+=`<div class="card">
+    <div class="tkr">${d.ticker}</div>
+    <div class="co-name">${d.company_name}</div>
+    <div class="price-big">${fd(d.current_price)}</div>
+    <div class="mcap-line">Market Cap: ${d.market_cap_b!=null?'$'+d.market_cap_b.toFixed(1)+'B':N()} &nbsp;·&nbsp; ${d.report_date}</div>
+    <div class="badge ${bc}">${sc.score}/8 — ${sc.tier}</div>
+    <div class="grid2">${crit}</div>
+  </div>`;
+
+  /* ── TECHNICALS ── */
+  const tech=d.technicals,ps=d.price_stats;
+  const retCls=ps.total_return_1y>=0?'pos':'neg';
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">Market Data & Technicals</div>
+    <div class="kv-grid">
+      <div class="kv"><label>1-Year Return</label><span class="${retCls}">${fpn(ps.total_return_1y)}</span></div>
+      <div class="kv"><label>Ann. Volatility</label><span>${fp(ps.ann_volatility)}</span></div>
+      <div class="kv"><label>RSI (14-day)</label><span>${tech.rsi!=null?tech.rsi.toFixed(1):N()} <small style="color:#667">${tech.rsi_interpretation}</small></span></div>
+      <div class="kv"><label>Death Cross</label><span class="${tech.death_cross?'neg':'pos'}">${tech.death_cross?'Yes':'No'}</span></div>
+      <div class="kv"><label>50-Day MA</label><span>${fd(tech.ma50)}</span></div>
+      <div class="kv"><label>200-Day MA</label><span>${fd(tech.ma200)}</span></div>
+      <div class="kv"><label>Best Day</label><span class="pos">${fpn(ps.best_day)} <small style="color:#667">${ps.best_date}</small></span></div>
+      <div class="kv"><label>Worst Day</label><span class="neg">${fpn(ps.worst_day)} <small style="color:#667">${ps.worst_date}</small></span></div>
+    </div>
+    <div class="signal ${sigCls(tech.signal)}">${tech.signal}</div>
+  </div>`;
+
+  /* ── FINANCIAL STATEMENTS ── */
+  const fy=d.fy_years,ft=d.financials_table;
+  const fsKeys=[
+    ['Total Revenue','Total Revenue'],
+    ['Gross Profit','Gross Profit'],
+    ['Operating Income','Operating Income'],
+    ['Net Income','Net Income'],
+    ['Operating Cash Flow','Operating Cash Flow'],
+    ['Free Cash Flow','Free Cash Flow'],
+    ['Capital Expenditure','Capital Expenditure'],
+    ['Total Debt','Total Debt'],
+    ["Stockholders' Equity",'Stockholders Equity'],
+  ];
+  const fyHdr=fy.map(y=>`<th>FY${y}</th>`).join('');
+  const fsBody=fsKeys.map(([lbl,key])=>{
+    const vals=(ft[key]||[]).map(v=>`<td class="td-r">${fb(v)}</td>`).join('');
+    return `<tr><td>${lbl}</td>${vals}</tr>`;
+  }).join('');
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">Financial Statements (in $B)</div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Line Item</th>${fyHdr}</tr></thead>
+      <tbody>${fsBody}</tbody>
+    </table></div>
+  </div>`;
+
+  /* ── KEY RATIOS ── */
+  const m=d.metrics;
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">Key Ratios & Metrics</div>
+    <div class="kv-grid">
+      <div class="kv"><label>Gross Margin</label><span>${fp(m.gross_margin)}</span></div>
+      <div class="kv"><label>Operating Margin</label><span>${fp(m.op_margin)}</span></div>
+      <div class="kv"><label>Net Margin</label><span>${fp(m.net_margin)}</span></div>
+      <div class="kv"><label>FCF Conversion</label><span>${fx(m.fcf_conversion,2)}</span></div>
+      <div class="kv"><label>Debt / Equity</label><span>${fx(m.debt_equity,2)}</span></div>
+      <div class="kv"><label>Current Ratio</label><span>${fx(m.current_ratio,2)}</span></div>
+      <div class="kv"><label>P/E Ratio</label><span>${fx(m.pe)}</span></div>
+      <div class="kv"><label>EV/EBITDA</label><span>${fx(m.ev_ebitda)}</span></div>
+      <div class="kv"><label>P/S Ratio</label><span>${fx(m.ps)}</span></div>
+      <div class="kv"><label>Revenue CAGR</label><span>${fp(m.rev_cagr)}</span></div>
+      <div class="kv"><label>FCF CAGR</label><span>${fp(m.fcf_cagr)}</span></div>
+    </div>
+  </div>`;
+
+  /* ── DCF VALUATION ── */
+  const dcf=d.dcf;
+  const dpCls=dcf.diff_pct!=null?(dcf.diff_pct>0?'pos':'neg'):'';
+  const dpLbl=dcf.diff_pct!=null?(dcf.diff_pct>0?' UNDERVALUED':' OVERVALUED'):'';
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">DCF Valuation</div>
+    <div class="sec-hdr">Inputs</div>
+    <div class="dcf-r"><span class="dcf-lbl">Base FCF (4-yr avg)</span><span class="dcf-val">${fb(dcf.base_fcf)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">FCF Growth Rate</span><span class="dcf-val">${fp(dcf.fcf_cagr_used)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">WACC</span><span class="dcf-val">9.5%</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">Terminal Growth</span><span class="dcf-val">3.0%</span></div>
+    <div class="sec-hdr">Output</div>
+    <div class="dcf-r"><span class="dcf-lbl">TV — Gordon Growth</span><span class="dcf-val">${fb(dcf.tv_gordon)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">TV — Exit Multiple</span><span class="dcf-val">${fb(dcf.tv_exit)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">Blended Terminal Value</span><span class="dcf-val">${fb(dcf.tv_blend)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">PV of FCFs</span><span class="dcf-val">${fb(dcf.pv_fcf)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">PV of Terminal Value</span><span class="dcf-val">${fb(dcf.pv_tv)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">Implied Price</span><span class="dcf-val">${fd(dcf.implied_price)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">Market Price</span><span class="dcf-val">${fd(d.current_price)}</span></div>
+    <div class="dcf-r"><span class="dcf-lbl">DCF vs Market</span><span class="dcf-val ${dpCls}">${dcf.diff_pct!=null?dcf.diff_pct.toFixed(1)+'%'+dpLbl:N()}</span></div>
+    ${dcf.exit_multiple_note?`<div class="note">${dcf.exit_multiple_note}</div>`:''}
+  </div>`;
+
+  /* ── SENSITIVITY TABLE ── */
+  const sens=d.sensitivity;
+  const cp=sens.current_price;
+  const sHdr=sens.w_rates.map(w=>`<th>WACC ${(w*100).toFixed(0)}%</th>`).join('');
+  const sBody=sens.g_rates.map((g,gi)=>{
+    const cells=sens.prices[gi].map(p=>{
+      if(p==null)return`<td class="td-r">N/A</td>`;
+      let cls='';
+      if(cp)cls=p>cp*1.1?'g':p<cp*0.9?'r':'y';
+      return`<td class="td-r ${cls}">$${Math.round(p)}</td>`;
+    }).join('');
+    return`<tr><td style="font-size:.76rem">FCF ${(g*100).toFixed(1)}%</td>${cells}</tr>`;
+  }).join('');
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">Sensitivity — Implied Share Price</div>
+    <div style="font-size:.72rem;color:#667;margin-bottom:8px">
+      <span class="pos">■</span> &gt;10% above &nbsp;<span class="neg">■</span> &gt;10% below &nbsp;<span class="neu">■</span> within 10%
+      ${cp?' &nbsp;| Current: '+fd(cp):''}
+    </div>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th>Growth</th>${sHdr}</tr></thead>
+      <tbody>${sBody}</tbody>
+    </table></div>
+  </div>`;
+
+  /* ── MONTE CARLO ── */
+  const mc=d.monte_carlo;
+  const paCls=mc.prob_above!=null?(mc.prob_above>50?'pos':'neg'):'';
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">Monte Carlo — 10,000 DCF Simulations</div>
+    <div class="mc-grid">
+      <div class="mc-box"><label>Mean</label><span>${fi(mc.mean)}</span></div>
+      <div class="mc-box"><label>Median</label><span>${fi(mc.median)}</span></div>
+      <div class="mc-box"><label>P(Above Market)</label><span class="${paCls}">${mc.prob_above!=null?mc.prob_above.toFixed(1)+'%':N()}</span></div>
+      <div class="mc-box"><label>10th Pct</label><span>${fi(mc.p10)}</span></div>
+      <div class="mc-box"><label>90th Pct</label><span>${fi(mc.p90)}</span></div>
+      <div class="mc-box"><label>Range</label><span style="font-size:.82rem">${mc.p10!=null&&mc.p90!=null?fi(mc.p10)+'–'+fi(mc.p90):N()}</span></div>
+    </div>
+    <div class="chart-wrap"><canvas id="mcChart"></canvas></div>
+    ${mc.growth_note?`<div class="note">${mc.growth_note}</div>`:''}
+  </div>`;
+
+  /* ── EARNINGS ── */
+  const earn=d.earnings;
+  r.innerHTML+=`<div class="card">
+    <div class="card-title">Earnings Calendar</div>
+    <div class="kv-grid">
+      <div class="kv"><label>Next Earnings Date</label><span>${earn.date||N()}</span></div>
+      <div class="kv"><label>Days Until</label><span>${earn.days_until!=null?earn.days_until:N()}</span></div>
+      <div class="kv"><label>Forward EPS Est.</label><span>${earn.forward_eps!=null?fd(earn.forward_eps,2):N()}</span></div>
+    </div>
+  </div>`;
+
+  /* ── SEC BUSINESS DESCRIPTION ── */
+  if(d.sec&&d.sec.sections&&d.sec.sections.length>0){
+    const secs=d.sec.sections.map((s,i)=>{
+      const id=`sec${i}`;
+      const long=s.text.length>350;
+      return`<div class="sec-sec">
+        <div class="sec-ttl">${s.title}</div>
+        <div class="sec-body" id="${id}">${s.text}</div>
+        ${long?`<span class="read-more" onclick="expand('${id}')">Read more ▼</span>`:''}
+      </div>`;
+    }).join('');
+    r.innerHTML+=`<div class="card">
+      <div class="card-title">Business Description — SEC 10-K (Item 1)</div>
+      <div style="font-size:.72rem;color:#667;margin-bottom:12px">Filed: ${d.sec.filing_date||N()}</div>
+      ${secs}
+    </div>`;
+  }else if(d.sec&&d.sec.error){
+    r.innerHTML+=`<div class="card">
+      <div class="card-title">Business Description — SEC 10-K</div>
+      <div style="color:#667;font-size:.82rem">SEC data unavailable: ${d.sec.error}</div>
+    </div>`;
+  }
+
+  r.innerHTML+=`<div class="footer">For educational purposes only. Not investment advice.</div>`;
+
+  /* ── MC Histogram (Chart.js) ── */
+  if(mc.prices_sample&&mc.prices_sample.length>0){
+    const prices=[...mc.prices_sample].sort((a,b)=>a-b);
+    const nBins=25;
+    const lo=prices[0],hi=prices[prices.length-1];
+    const w=(hi-lo)/nBins;
+    const counts=Array(nBins).fill(0);
+    prices.forEach(p=>counts[Math.min(Math.floor((p-lo)/w),nBins-1)]++);
+    const labels=counts.map((_,i)=>'$'+Math.round(lo+i*w));
+    const bgColors=counts.map((_,i)=>{
+      const mid=lo+(i+.5)*w;
+      return cp?(mid>cp?'rgba(46,204,113,.7)':'rgba(231,76,60,.7)'):'rgba(104,144,248,.7)';
+    });
+    new Chart($('mcChart').getContext('2d'),{
+      type:'bar',
+      data:{labels,datasets:[{data:counts,backgroundColor:bgColors,borderWidth:0}]},
+      options:{
+        plugins:{legend:{display:false},tooltip:{callbacks:{title:t=>`~${t[0].label}`}}},
+        scales:{
+          x:{ticks:{maxTicksLimit:6,color:'#667',font:{size:10}},grid:{display:false}},
+          y:{ticks:{color:'#667',font:{size:10}},grid:{color:'#1a1d35'}}
+        },
+        animation:{duration:600}
+      }
+    });
+  }
+}
+
+function expand(id){
+  const el=document.getElementById(id);
+  el.classList.add('open');
+  el.nextElementSibling.remove();
+}
+</script>
+</body>
+</html>
