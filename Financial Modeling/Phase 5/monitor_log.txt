@@ -3941,3 +3941,102 @@ Traceback (most recent call last):
   File "/Users/simonrozman/anaconda3/lib/python3.11/site-packages/pydantic_core/__init__.py", line 6, in <module>
     from typing_extensions import Sentinel
 ImportError: cannot import name 'Sentinel' from 'typing_extensions' (/Users/simonrozman/anaconda3/lib/python3.11/site-packages/typing_extensions.py)
+/Users/simonrozman/Finance/Financial Modeling/Phase 5/phase5_monitor.py:704: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  sp_df   = pd.read_html(response.text)[0]
+
+172 Failed downloads:
+['LIN', 'VICI', 'DECK', 'EBAY', 'ABT', 'CBRE', 'BDX', 'MSI', 'SPG', 'SATS', 'IR', 'T', 'ES', 'PCAR', 'TXT', 'APO', 'TRMB', 'PHM', 'AAPL', 'COO', 'EFX', 'LITE', 'COP', 'SHW', 'TSLA', 'GPN', 'TT', 'DHR', 'DHI', 'CSGP', 'INTC', 'MPC', 'PNC', 'SMCI', 'KIM', 'MRSH', 'FSLR', 'MET', 'BEN', 'PRU']: DNSError('Failed to perform, curl: (6) Could not resolve host: query2.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['SBUX', 'IDXX', 'ACN', 'USB', 'XEL', 'COIN', 'YUM', 'MU', 'STX', 'VTRS', 'TDY', 'UHS', 'EIX', 'TPL', 'BG', 'FITB', 'DXCM', 'MNST', 'RTX', 'IRM', 'PEP', 'BAX', 'A', 'WMT', 'PANW', 'ZBRA', 'BSX', 'DPZ', 'SRE', 'STE', 'TYL', 'UDR', 'RMD', 'KO', 'PGR', 'SYF', 'WM', 'ARES', 'CME', 'CAG', 'GOOG', 'HSY', 'VLO', 'KLAC', 'AXON', 'ELV', 'PCG', 'CNP', 'SWKS', 'STZ', 'ODFL', 'EQT', 'FDS', 'MCK', 'COF', 'LYV', 'CCI', 'AME', 'ROK', 'HLT', 'FIS', 'MRNA', 'AXP', 'CAH', 'WST', 'AEE', 'HAS', 'VRT', 'CI', 'BR', 'NCLH', 'ADP', 'NWS', 'DIS', 'TECH', 'EXPD', 'PPG', 'AIZ']: DNSError('Failed to perform, curl: (6) getaddrinfo() thread failed to start. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['NVDA', 'REGN', 'RVTY', 'HII', 'BXP', 'BF-B', 'WSM', 'CPB', 'TPR', 'PSA', 'BA', 'ATO', 'NKE', 'AMAT', 'CRH', 'SWK', 'MPWR', 'EOG', 'OXY', 'AWK', 'EMR', 'LEN', 'NI', 'SNPS', 'PLTR', 'FAST', 'C', 'TTD', 'ADBE', 'JBHT', 'LLY', 'CMG', 'XYL', 'UBER', 'AIG', 'GD', 'WDC', 'OMC', 'CDNS', 'DASH', 'NTRS', 'IT', 'MGM', 'MSFT', 'UNP', 'ETN', 'COHR', 'ROST', 'ESS']: OperationalError('unable to open database file')
+['AMZN']: SSLError('Failed to perform, curl: (77) error setting certificate verify locations:  CAfile: /Users/simonrozman/anaconda3/lib/python3.11/site-packages/certifi/cacert.pem CApath: none. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['EL']: SSLError('Failed to perform, curl: (35) Recv failure: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['APD']: SSLError('Failed to perform, curl: (35) TLS connect error: error:100000e1:SSL routines:OPENSSL_internal:UNEXPECTED_RECORD. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['POOL']: SSLError('Failed to perform, curl: (35) Send failure: Bad file descriptor. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+['EPAM']: SSLError('Failed to perform, curl: (35) getsockname() failed with errno 38: Socket operation on non-socket. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.')
+======================================================================
+  PORTFOLIO MONITOR  |  44 tickers
+======================================================================
+  Collecting data... (this may take 2–3 minutes)
+
+  Fetching S&P 500 losers...
+
+
+  ──────────────────────────────────────────────────────────────────
+  HIGH PRIORITY  (3 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [!] RGTI    $15.88    Price dropped -11.0% since last run ($17.85 → $15.88)
+  [!] OKLO    $54.76    Price dropped -12.0% since last run ($62.25 → $54.76)
+  [!] QBTS    $18.04    Price dropped -11.4% since last run ($20.35 → $18.04)
+
+  ──────────────────────────────────────────────────────────────────
+  WATCH  (10 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [-] CVX     $195.61   DCF implies $124.30 — 36% below market price
+  [-] MSFT    $419.46   DCF implies $213.71 — 49% below market price
+  [-] ALAB    $227.04   DCF implies $42.91 — 81% below market price
+  [-] SNPS    $491.98   DCF implies $196.20 — 60% below market price
+  [-] RDDT    $156.32   DCF implies $121.36 — 22% below market price
+  [-] DDOG    $210.31   DCF implies $76.41 — 64% below market price
+  [-] ISRG    $442.50   DCF implies $111.19 — 75% below market price
+  [-] AMBA    $76.03    DCF implies $11.56 — 85% below market price
+  [-] GOOG    $384.00   DCF implies $297.66 — 22% below market price
+  [-] AMZN    $255.79   DCF implies $51.52 — 80% below market price
+
+  ──────────────────────────────────────────────────────────────────
+  POSITIVE  (4 alert(s))
+  ──────────────────────────────────────────────────────────────────
+  [+] WMT     $134.92   Earnings in 2 day(s) — 2026-05-21 (upcoming catalyst)
+  [+] CRGO    $2.08     Earnings in 7 day(s) — 2026-05-26 (upcoming catalyst)
+  [+] TATT    $32.53    Earnings in 1 day(s) — 2026-05-20 (upcoming catalyst)
+  [+] NVDA    $220.85   Earnings in 1 day(s) — 2026-05-20 (upcoming catalyst)
+
+  ──────────────────────────────────────────────────────────────────
+  SUMMARY  |  44 tickers monitored  |  17 with alerts (17 total)  |  27 unchanged
+  Compared against snapshot from: 2026-05-15 20:31 UTC
+  ──────────────────────────────────────────────────────────────────
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — DAILY  (today vs yesterday)
+  ──────────────────────────────────────────────────────────────────
+  CVNA     Carvana                       $62.04      -6.03%
+  AKAM     Akamai Technologies           $142.67     -5.37%
+  GNRC     Generac                       $240.70     -4.88%
+  QCOM     Qualcomm                      $195.68     -3.91%
+  NEM      Newmont                       $105.71     -3.77%
+  ALB      Albemarle Corporation         $169.16     -3.74%
+  CARR     Carrier Global                $62.14      -3.67%
+  DD       DuPont                        $46.87      -3.65%
+  CCL      Carnival Corporation          $24.01      -3.59%
+  SW       Smurfit Westrock              $36.01      -3.59%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — WEEKLY  (today vs 5 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  ALB      Albemarle Corporation         $169.16     -17.69%
+  CVNA     Carvana                       $62.04      -15.84%
+  Q        Qnity Electronics             $144.17     -14.37%
+  GLW      Corning Inc.                  $173.82     -12.32%
+  CEG      Constellation Energy          $257.87     -12.03%
+  NEM      Newmont                       $105.71     -11.68%
+  TER      Teradyne                      $318.81     -11.06%
+  NRG      NRG Energy                    $122.27     -10.97%
+  GNRC     Generac                       $240.70     -10.72%
+  FCX      Freeport-McMoRan              $59.11      -10.48%
+
+  ──────────────────────────────────────────────────────────────────
+  S&P 500 TOP LOSERS — MONTHLY  (today vs ~21 trading days ago)
+  ──────────────────────────────────────────────────────────────────
+  CHTR     Charter Communications        $143.00     -41.56%
+  ZTS      Zoetis                        $79.14      -35.51%
+  TSCO     Tractor Supply                $31.67      -29.31%
+  LULU     Lululemon Athletica           $120.13     -27.98%
+  BLDR     Builders FirstSource          $67.67      -25.90%
+  CDW      CDW Corporation               $103.97     -24.03%
+  PODD     Insulet Corporation           $154.72     -22.98%
+  CVNA     Carvana                       $62.04      -22.83%
+  APH      Amphenol                      $119.11     -22.05%
+  NRG      NRG Energy                    $122.27     -21.97%
+
+  Email sent → investor04031970@gmail.com
+  Data collected in 59.7s
+
