@@ -4,21 +4,11 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# ============================================================================
-# CONFIG
-# ============================================================================
 ticker1 = "TPL"
 ticker2 = "APTV"
 ticker3 = "NOW"
 tickers = [ticker1, ticker2, ticker3]
 COLORS  = {ticker1: "steelblue", ticker2: "darkorange", ticker3: "lightgreen"}
-
-# ============================================================================
-# SECTION 1: Pull financial statements and extract most-recent-year line items
-# ============================================================================
-# We compare only the most recent fiscal year so all figures are on equal
-# footing. Each company may have a different fiscal year end date, but the
-# ratios themselves are scale-independent so the comparison is still valid.
 
 records = {}
 
@@ -28,7 +18,6 @@ for ticker in tickers:
     bs  = t.balance_sheet.dropna(axis=1, how="all")
     cf  = t.cashflow.dropna(axis=1, how="all")
 
-    # Most recent column = index 0 (yfinance returns newest first)
     fy = is_.columns[0]
 
     def get(df, label):
@@ -60,10 +49,6 @@ for ticker in tickers:
 
 df = pd.DataFrame(records).T
 
-# ============================================================================
-# SECTION 2: Print comparison table
-# ============================================================================
-
 print("=" * 70)
 print("PEER COMPARISON — Most Recent Fiscal Year")
 print("=" * 70)
@@ -88,10 +73,6 @@ for col, fmt in [
         row += fmt.format(val)
     print(row)
 
-# ============================================================================
-# SECTION 3: 2×3 bar chart dashboard
-# ============================================================================
-
 ratio_meta = [
     ("Gross Margin %",     "Gross Profit / Revenue",              "%"),
     ("Operating Margin %", "Operating Income / Revenue",          "%"),
@@ -113,7 +94,6 @@ for ax, (col, formula, unit) in zip(axes, ratio_meta):
                     color=[COLORS[t] for t in tickers],
                     width=0.5, edgecolor="white", linewidth=0.8)
 
-    # Value labels on top of each bar
     for bar, val in zip(bars, values):
         label = f"{val:.1f}%" if unit == "%" else f"{val:.2f}x"
         ax.text(bar.get_x() + bar.get_width() / 2,
@@ -126,7 +106,6 @@ for ax, (col, formula, unit) in zip(axes, ratio_meta):
     ax.set_xticks(range(len(tickers)))
     ax.set_xticklabels(tickers)
 
-# Shared legend
 handles = [plt.Rectangle((0, 0), 1, 1, color=COLORS[t]) for t in tickers]
 fig.legend(handles, tickers, loc="upper right", fontsize=9, title="Company")
 

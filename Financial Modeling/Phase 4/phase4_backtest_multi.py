@@ -1,14 +1,3 @@
-# ============================================================================
-# phase4_backtest_multi.py — Multi-Stock Backtest
-# ============================================================================
-# This file runs the identical signal strategy from phase4_backtest.py across
-# a list of tickers to determine whether the strategy has genuine edge across
-# multiple companies rather than being a one-stock coincidence. A strategy that
-# consistently beats buy-and-hold across a diverse set of high-quality names is
-# far more credible than one that happens to work on a single ticker. This is
-# the first step toward validating the signal's statistical robustness.
-# ============================================================================
-
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -16,23 +5,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-# ──────────────────────────────────────────────────────────────────────────────
-# CONFIGURATION
-# ──────────────────────────────────────────────────────────────────────────────
-# Highest-scoring fundamental stocks from the phase5 screener results.
 TICKERS = ['AAPL', 'MSFT', 'GOOG', 'META', 'AVGO', 'AMZN', 'ADBE', 'PAYC', 'TTD', 'SNPS']
 
 STARTING_CAP   = 10_000.0
-RISK_FREE_RATE = 0.042   # 4.2% annualised — matches phase4_backtest.py
-STOP_LOSS_PCT  = 0.92    # 8% stop loss — matches phase4_backtest.py
+RISK_FREE_RATE = 0.042   
+STOP_LOSS_PCT  = 0.92    
 DATA_PERIOD    = "2y"
 
 
-# ============================================================================
-# CORE BACKTEST FUNCTION
-# Encapsulates the full backtest logic from phase4_backtest.py.
-# Returns a dict of per-ticker metrics, or None if data is insufficient.
-# ============================================================================
 
 def run_backtest(ticker):
     # ── SECTION 1: Download and indicators ──────────────────────────────────
@@ -61,7 +41,6 @@ def run_backtest(ticker):
     if len(df) < 50:
         return None
 
-    # ── SECTION 2: Signal logic — identical to phase4_backtest.py ───────────
     rsi_was_oversold       = df["RSI"].rolling(10).min().shift(1) <= 30
     rsi_rising_2d          = ((df["RSI"] > df["RSI"].shift(1)) &
                               (df["RSI"].shift(1) > df["RSI"].shift(2)))
@@ -133,7 +112,6 @@ def run_backtest(ticker):
             "Exit type":   "Open",
         })
 
-    # ── SECTION 4: Performance metrics ──────────────────────────────────────
     trades_df  = pd.DataFrame(trades)
     n_trades   = len(trades_df)
     win_rate   = float((trades_df["Return %"] > 0).mean() * 100) if n_trades > 0 else 0.0
@@ -148,7 +126,6 @@ def run_backtest(ticker):
     ann_vol    = float(daily_rets.std() * np.sqrt(252))
     sharpe     = (ann_return - RISK_FREE_RATE) / ann_vol if ann_vol > 0 else 0.0
 
-    # ── SECTION 5: Buy and hold benchmark ───────────────────────────────────
     bh_shares   = int(STARTING_CAP // df["Close"].iloc[0])
     bh_cash_rem = STARTING_CAP - bh_shares * df["Close"].iloc[0]
     bh_final    = bh_shares * last_price + bh_cash_rem
@@ -168,10 +145,6 @@ def run_backtest(ticker):
         "sharpe":         round(sharpe, 2),
     }
 
-
-# ============================================================================
-# MAIN — run all tickers, compile results, print and chart
-# ============================================================================
 
 print("=" * 68)
 print(f"  MULTI-STOCK BACKTEST  |  {len(TICKERS)} tickers  |  "

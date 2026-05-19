@@ -1,0 +1,54 @@
+name: Portfolio Monitor
+
+on:
+  schedule:
+    # All times UTC — Eastern Daylight Time is UTC-4
+    - cron: '0 12 * * 1-5'   # 8:00 AM ET  (weekdays)
+    - cron: '0 16 * * 1-5'   # 12:00 PM ET (weekdays)
+    - cron: '30 20 * * 1-5'  # 4:30 PM ET  (weekdays)
+  workflow_dispatch:           # allow manual trigger from GitHub UI
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install requests yfinance pandas numpy anthropic lxml html5lib beautifulsoup4
+
+      - name: Create config.py from secrets
+        env:
+          EMAIL_FROM:        ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO:          ${{ secrets.EMAIL_TO }}
+          EMAIL_PASSWORD:    ${{ secrets.EMAIL_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python - << 'PYEOF'
+          import os
+          with open("Phase 5/config.py", "w") as f:
+              f.write(f"EMAIL_ENABLED     = True\n")
+              f.write(f"EMAIL_FROM        = {repr(os.environ['EMAIL_FROM'])}\n")
+              f.write(f"EMAIL_TO          = {repr(os.environ['EMAIL_TO'])}\n")
+              f.write(f"EMAIL_PASSWORD    = {repr(os.environ['EMAIL_PASSWORD'])}\n")
+              f.write(f"ANTHROPIC_API_KEY = {repr(os.environ['ANTHROPIC_API_KEY'])}\n")
+          PYEOF
+
+      - name: Run monitor
+        run: python "Phase 5/phase5_monitor.py"
+
+      - name: Commit updated snapshot
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "Phase 5/monitor_snapshot.json" "Phase 5/monitor_log.txt"
+          git diff --cached --quiet || git commit -m "chore: monitor snapshot $(date -u +%Y-%m-%dT%H:%M)Z"
+          git push

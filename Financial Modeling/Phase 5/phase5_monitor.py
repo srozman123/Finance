@@ -27,7 +27,7 @@ import anthropic
 
 # Email credentials are stored in config.py (excluded from git via .gitignore).
 # Copy config_template.py to config.py and fill in your details to get started.
-from config import EMAIL_ENABLED, EMAIL_FROM, EMAIL_TO, EMAIL_PASSWORD, ALWAYS_SEND_MORNING, ANTHROPIC_API_KEY
+from config import EMAIL_ENABLED, EMAIL_FROM, EMAIL_TO, EMAIL_PASSWORD, ANTHROPIC_API_KEY
 
 anthropic_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
@@ -57,6 +57,15 @@ WATCHLIST = [
 ]
 
 SNAPSHOT_PATH = os.path.join(os.path.dirname(__file__), "monitor_snapshot.json")
+
+# Mandatory email send times (local, hour, minute). Emails always go out within
+# ±10 minutes of each window regardless of alert count.
+_SCHEDULED_TIMES = [(8, 0), (12, 0), (16, 30)]
+_SCHEDULED_LABELS = {
+    (8, 0):   "Morning Briefing",
+    (12, 0):  "Midday Briefing",
+    (16, 30): "Afternoon Briefing",
+}
 
 WACC           = 0.095   # 9.5%
 TERMINAL_G     = 0.030   # 3.0%
@@ -813,6 +822,16 @@ def print_alerts(alerts: dict, current: dict, prev_timestamp):
 # Failures print a warning but never crash the monitor.
 # ============================================================================
 
+def _scheduled_briefing_label():
+    """Return the briefing label if now is within 10 min of a scheduled send time, else None."""
+    now = datetime.now()
+    now_min = now.hour * 60 + now.minute
+    for h, m in _SCHEDULED_TIMES:
+        if abs(now_min - (h * 60 + m)) <= 10:
+            return _SCHEDULED_LABELS[(h, m)]
+    return None
+
+
 def send_email_alert(subject: str, body: str):
     """Send a plain-text email via Gmail SMTP. No-op if EMAIL_ENABLED is False."""
     if not EMAIL_ENABLED:
@@ -952,21 +971,19 @@ def main():
 
     # Decide whether to send email
     if EMAIL_ENABLED:
-        total_alerts = sum(len(v) for v in alerts.values())
-        high_count   = sum(
+        total_alerts   = sum(len(v) for v in alerts.values())
+        high_count     = sum(
             1 for ta in alerts.values()
             for priority, _ in ta if priority == "HIGH"
         )
 
-        # Morning-briefing override: if ALWAYS_SEND_MORNING is True and the
-        # current local hour is 8, send regardless of alert count.
-        local_hour      = datetime.now().hour
-        is_morning_run  = ALWAYS_SEND_MORNING and local_hour == 8
-        should_send     = total_alerts > 0 or is_morning_run
+        # Always send at 8 AM, 12 PM, and 4:30 PM; also send any time there are alerts.
+        briefing_label = _scheduled_briefing_label()
+        should_send    = briefing_label is not None or total_alerts > 0
 
         if should_send:
             run_date     = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-            briefing_tag = "  [Daily Briefing]" if is_morning_run and total_alerts == 0 else ""
+            briefing_tag = f"  [{briefing_label}]" if briefing_label else ""
             subject = (
                 f"Portfolio Monitor — {run_date} — "
                 f"{total_alerts} alert(s) — {high_count} high priority"

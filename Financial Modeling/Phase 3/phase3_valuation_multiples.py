@@ -5,27 +5,17 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-# ============================================================================
-# SECTION 1: Pull raw inputs from yfinance
-# ============================================================================
-# Valuation multiples connect a company's market price to its fundamentals.
-# They answer the question: how much is the market paying for each dollar of
-# revenue, earnings, or cash flow? Multiples are the primary tool for
-# comparing whether a stock is cheap or expensive relative to peers or history.
-
 ticker = "CTRE"
 t = yf.Ticker(ticker)
 
-# --- Market inputs (live, from .info) ---
 current_price       = t.info["currentPrice"]
 shares_outstanding  = t.info["sharesOutstanding"]
 
-# --- Financial statement inputs (most recent fiscal year) ---
 is_ = t.financials.dropna(axis=1, how="all")
 bs  = t.balance_sheet.dropna(axis=1, how="all")
 cf  = t.cashflow.dropna(axis=1, how="all")
 
-fy = is_.columns[0]  # most recent fiscal year end
+fy = is_.columns[0]
 
 total_revenue = is_.loc["Total Revenue", fy]
 net_income    = is_.loc["Net Income",    fy]
@@ -33,26 +23,14 @@ ebitda        = is_.loc["EBITDA",        fy]
 total_debt    = bs.loc["Total Debt",     fy]
 cash          = bs.loc["Cash And Cash Equivalents", fy]
 
-# ============================================================================
-# SECTION 2: Calculate valuation metrics
-# ============================================================================
-# Market Cap is the market's total assessed value of the equity.
-# Enterprise Value adds debt and subtracts cash to capture the full cost of
-# buying the entire business — what an acquirer would actually pay.
-
 market_cap        = current_price * shares_outstanding
 enterprise_value  = market_cap + total_debt - cash
 
-# Multiples
-pe_ratio   = market_cap       / net_income    # Price-to-Earnings
-ps_ratio   = market_cap       / total_revenue # Price-to-Sales
-ev_ebitda  = enterprise_value / ebitda        # EV/EBITDA
+pe_ratio   = market_cap       / net_income
+ps_ratio   = market_cap       / total_revenue
+ev_ebitda  = enterprise_value / ebitda
 
-# ============================================================================
-# SECTION 3: Print results
-# ============================================================================
-
-B = 1e9  # billions
+B = 1e9
 
 print("=" * 60)
 print(f"VALUATION MULTIPLES — {ticker}  (FY end: {fy.strftime('%Y-%m-%d')})")
@@ -75,13 +53,6 @@ print("\n[ VALUATION MULTIPLES ]")
 print(f"  {'P/E  (= Market Cap / Net Income)':<35} {pe_ratio:>9.1f}x")
 print(f"  {'P/S  (= Market Cap / Revenue)':<35} {ps_ratio:>9.1f}x")
 print(f"  {'EV/EBITDA  (= EV / EBITDA)':<35} {ev_ebitda:>9.1f}x")
-
-# ============================================================================
-# SECTION 4: Peer group comparison
-# ============================================================================
-# Multiples are only meaningful in context. Comparing AAPL's P/E to MSFT and
-# GOOGL shows whether the market is pricing it at a premium or discount to
-# its closest peers — and which company the market views as the best value.
 
 peers   = ["CTRE", "OHI", "SBRA"]
 COLORS  = {"AAPL": "steelblue", "MSFT": "darkorange", "GOOGL": "seagreen"}
@@ -113,7 +84,6 @@ for tk in peers:
 
 df = pd.DataFrame(records).T
 
-# Print comparison table
 print("\n\n" + "=" * 55)
 print("PEER MULTIPLES COMPARISON — Most Recent Fiscal Year")
 print("=" * 55)
@@ -125,10 +95,6 @@ for col, formula in [("P/E", "MCap/NI"), ("P/S", "MCap/Rev"), ("EV/EBITDA", "EV/
         row += f"  {df.loc[tk, col]:>6.1f}x"
     row += f"   ({formula})"
     print(row)
-
-# ============================================================================
-# SECTION 5: Grouped bar chart
-# ============================================================================
 
 multiples = ["P/E", "P/S", "EV/EBITDA"]
 formulas  = {"P/E": "Market Cap / Net Income",
