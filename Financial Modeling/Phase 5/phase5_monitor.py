@@ -23,6 +23,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timezone
+from io import StringIO
 import anthropic
 
 # Email credentials are stored in config.py (excluded from git via .gitignore).
@@ -53,7 +54,7 @@ WATCHLIST = [
     "RGTI", "ALAB", "CTRE", "SMCI", "SOUN", "BE", "TATT", "KLAR", "SNPS",
     "NVO", "TEM", "PLTR", "META", "AVGO", "TSLA", "AAPL", "RDDT", "HOOD",
     "DDOG", "INTC", "OKLO", "ISRG", "PAYC", "TTD", "AMD", "AMBA", "GOOG",
-    "QBTS", "ORCL", "AMZN", "NFLX", "ADBE", "NVDA", "NOW", "PSUS"
+    "QBTS", "ORCL", "AMZN", "NFLX", "ADBE", "NVDA", "NOW", "PSUS", "INTU"
 ]
 
 SNAPSHOT_PATH = os.path.join(os.path.dirname(__file__), "monitor_snapshot.json")
@@ -701,7 +702,7 @@ def get_sp500_losers(top_n: int = 10):
             headers=headers, timeout=15,
         )
         response.raise_for_status()
-        sp_df   = pd.read_html(response.text)[0]
+        sp_df   = pd.read_html(StringIO(response.text))[0]
         tickers = sp_df["Symbol"].str.replace(".", "-", regex=False).tolist()
         names   = dict(zip(
             sp_df["Symbol"].str.replace(".", "-", regex=False),

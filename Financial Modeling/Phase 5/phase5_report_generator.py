@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 # REPORT_TICKER — change this to generate a
 # different report when running the file directly
 # ─────────────────────────────────────────────
-REPORT_TICKER = "NFLX"
+REPORT_TICKER = "INTU"
 
 REPORT_DIR = os.path.join(os.path.dirname(__file__), "reports")
 os.makedirs(REPORT_DIR, exist_ok=True)

@@ -962,7 +962,7 @@ def export_csv(results: list[dict], filename: str) -> None:
 
 # Ticker symbol(s) to analyze. Add more to the list to compare companies.
 #   e.g. TICKERS = ["AAPL", "MSFT", "GOOGL"]
-TICKERS     = ["PSUS"]
+TICKERS     = ["INTU"]
 
 # Target fiscal year. Set to None to use the most recent 10-K available.
 #   e.g. TARGET_YEAR = 2022
