@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-06-01T20:20:54.207493+00:00",
+  "timestamp": "2026-06-01T22:42:11.627532+00:00",
   "tickers": {
     "CVX": {
       "price": 185.83,
-      "rsi": 47.866883693002556,
+      "rsi": 47.866883693328205,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -21,7 +21,7 @@
     },
     "MU": {
       "price": 1035.5,
-      "rsi": 80.72552245114868,
+      "rsi": 80.72552244976059,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -39,7 +39,7 @@
     },
     "MSFT": {
       "price": 460.52,
-      "rsi": 73.32367193599447,
+      "rsi": 73.32367189109773,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -57,7 +57,7 @@
     },
     "HAL": {
       "price": 39.35,
-      "rsi": 43.98601011712106,
+      "rsi": 43.986010117090494,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -75,7 +75,7 @@
     },
     "WMT": {
       "price": 114.6,
-      "rsi": 27.618037722588824,
+      "rsi": 27.618037701255176,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -93,7 +93,7 @@
     },
     "BAC": {
       "price": 51.51,
-      "rsi": 50.53007884698807,
+      "rsi": 50.530078846980985,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -201,7 +201,7 @@
     },
     "CTRE": {
       "price": 39.34,
-      "rsi": 42.49038432139117,
+      "rsi": 42.490384319311566,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -381,7 +381,7 @@
     },
     "META": {
       "price": 600.47,
-      "rsi": 41.61836704340448,
+      "rsi": 41.618367041587476,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -399,7 +399,7 @@
     },
     "AVGO": {
       "price": 459.97,
-      "rsi": 69.75281985139966,
+      "rsi": 69.75281985140714,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -435,7 +435,7 @@
     },
     "AAPL": {
       "price": 306.31,
-      "rsi": 67.17304351693114,
+      "rsi": 67.17304351693122,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -561,7 +561,7 @@
     },
     "PAYC": {
       "price": 148.58,
-      "rsi": 66.51606164953904,
+      "rsi": 66.51606163187535,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -633,7 +633,7 @@
     },
     "GOOG": {
       "price": 372.58,
-      "rsi": 49.33864687177098,
+      "rsi": 49.338646871964414,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -669,7 +669,7 @@
     },
     "ORCL": {
       "price": 248.15,
-      "rsi": 80.72874865650994,
+      "rsi": 80.72874866554831,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -795,7 +795,7 @@
     },
     "INTU": {
       "price": 353.76,
-      "rsi": 46.75158092082276,
+      "rsi": 46.75158091930323,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
