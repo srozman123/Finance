@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-07-03T13:51:55.959599+00:00",
+  "timestamp": "2026-07-03T17:28:20.418142+00:00",
   "tickers": {
     "CVX": {
       "price": 169.2,
-      "rsi": 35.84879005683783,
+      "rsi": 35.84879005651064,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -39,7 +39,7 @@
     },
     "MSFT": {
       "price": 390.49,
-      "rsi": 49.849934313758716,
+      "rsi": 49.849934313772565,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -57,7 +57,7 @@
     },
     "HAL": {
       "price": 32.96,
-      "rsi": 26.81372644353098,
+      "rsi": 26.81372644352814,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -75,7 +75,7 @@
     },
     "WMT": {
       "price": 111.84,
-      "rsi": 35.60660471514194,
+      "rsi": 35.60660472031806,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -93,7 +93,7 @@
     },
     "BAC": {
       "price": 58.73,
-      "rsi": 70.79705794558245,
+      "rsi": 70.79705794466956,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -201,7 +201,7 @@
     },
     "CTRE": {
       "price": 41.76,
-      "rsi": 68.19492254538643,
+      "rsi": 68.19492254539274,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -381,7 +381,7 @@
     },
     "META": {
       "price": 582.9,
-      "rsi": 49.656156541831706,
+      "rsi": 49.65615654174789,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -399,7 +399,7 @@
     },
     "AVGO": {
       "price": 360.45,
-      "rsi": 39.70872888190575,
+      "rsi": 39.708728865345755,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -435,7 +435,7 @@
     },
     "AAPL": {
       "price": 308.63,
-      "rsi": 60.27663325626306,
+      "rsi": 60.2766332558393,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -548,12 +548,12 @@
       "golden_cross_5d": false,
       "death_cross_5d": false,
       "gross_margin": 0.6599600584220096,
-      "net_margin": 0.28376404661837906,
-      "fcf_conversion": 0.872093837535014,
+      "net_margin": null,
+      "fcf_conversion": null,
       "rev_cagr": 0.17386716793068868,
       "debt_equity": null,
       "ev_ebitda": null,
-      "screener_score": 4,
+      "screener_score": 2,
       "dcf_implied": 111.19,
       "dcf_vs_market_pct": -73.9,
       "next_earnings_date": "2026-07-16",
@@ -561,7 +561,7 @@
     },
     "PAYC": {
       "price": 139.21,
-      "rsi": 59.468881300574836,
+      "rsi": 59.46888130410963,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -633,7 +633,7 @@
     },
     "GOOG": {
       "price": 356.18,
-      "rsi": 48.67691754306766,
+      "rsi": 48.67691754306917,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -741,7 +741,7 @@
     },
     "NVDA": {
       "price": 194.83,
-      "rsi": 41.21917356139122,
+      "rsi": 41.21917357789168,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
