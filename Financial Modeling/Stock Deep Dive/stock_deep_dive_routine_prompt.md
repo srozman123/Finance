@@ -59,75 +59,94 @@ level sections:
 
 Parse this JSON from the triggering message before doing anything else.
 
-**Step 2 -- Answer all 27 questions.**
+**Step 2 -- Answer all 28 questions.**
 Work through every question below. Ground each answer in the payload data
 first, then verify or extend with live web research -- several of these
 categories have essentially nothing in the payload and require search to
-answer at all (competitor/market-share, CEO history, insider buying/selling,
-compensation structure, M&A track record, executive turnover, earnings-call
-tone). Where you're relying on the filing's own framing rather than an
-independent source, say so. Keep each answer a few sentences, not a full
-essay -- depth comes from Step 3, not from padding every item.
+answer at all (recent-news catalyst, competitor/market-share, CEO history,
+insider buying/selling, compensation structure, M&A track record, executive
+turnover, earnings-call tone). Where you're relying on the filing's own
+framing rather than an independent source, say so. Keep each answer a few
+sentences, not a full essay -- depth comes from Step 3, not from padding
+every item.
+
+*Recent Price Action*
+1. What has actually happened recently that explains where the stock price
+   is right now? Start from `financials.price_stats` /
+   `financials.technicals` to see the size and direction of the move and
+   over what window (last few days, since last earnings, past month/
+   quarter) -- then use live web research to find the specific cause:
+   an earnings beat/miss vs. guidance, a guidance raise or cut, an
+   analyst upgrade/downgrade or price-target change, M&A or regulatory
+   news, a product launch or recall, an executive departure, a short
+   report, insider buying/selling, or a sector-wide/macro move that
+   dragged the stock along without any company-specific news at all.
+   Name the specific event(s) and date(s), not a vague gesture at
+   "market conditions." If the move is genuinely just sector/macro drift
+   with nothing company-specific behind it, say that plainly rather than
+   inventing a company-specific narrative.
 
 *Business & Moat*
-1. What is the company's primary revenue driver, and what % of total revenue
+2. What is the company's primary revenue driver, and what % of total revenue
    does it represent?
-2. Is this revenue stream growing, shrinking, or stable? What's the growth
+3. Is this revenue stream growing, shrinking, or stable? What's the growth
    rate?
-3. Who are the 2-3 main competitors, and how does market share compare?
-4. What is the company's competitive moat? How defensible is it?
-5. What could erode this moat in the next 5 years?
+4. Who are the 2-3 main competitors, and how does market share compare?
+5. What is the company's competitive moat? How defensible is it?
+6. What could erode this moat in the next 5 years?
 
 *Financial Health*
-6. What are gross, operating, and net margins? How do they compare to peers
+7. What are gross, operating, and net margins? How do they compare to peers
    and the industry?
-7. Is the company generating positive free cash flow? If not, when will it?
-8. What's the debt-to-equity ratio? Is it sustainable given cash generation?
-9. What's driving recent earnings changes -- volume, pricing, cost cuts, or
-   one-time gains?
+8. Is the company generating positive free cash flow? If not, when will it?
+9. What's the debt-to-equity ratio? Is it sustainable given cash generation?
+10. What's driving recent earnings changes -- volume, pricing, cost cuts, or
+    one-time gains?
 
 *Valuation & Thesis*
-10. What multiple is the market paying (P/E, EV/EBITDA, P/S)? vs. historical
+11. What multiple is the market paying (P/E, EV/EBITDA, P/S)? vs. historical
     and peer average?
-11. What assumption is baked into the current market price?
-12. What's different about a reasonable contrarian assumption vs. the market
+12. What assumption is baked into the current market price?
+13. What's different about a reasonable contrarian assumption vs. the market
     consensus?
-13. What specific metrics would need to be hit for a bullish thesis to play
+14. What specific metrics would need to be hit for a bullish thesis to play
     out?
 
 *Risk & Catalysts*
-14. What's the bull case? What has to go right?
-15. What's the bear case? What could go wrong?
-16. What would break the thesis -- a specific metric or event that should
+15. What's the bull case? What has to go right?
+16. What's the bear case? What could go wrong?
+17. What would break the thesis -- a specific metric or event that should
     trigger reconsidering the position?
-17. What's genuinely unknown here that could materially change the picture?
-18. What do people want the next earnings report to look like?
+18. What's genuinely unknown here that could materially change the picture?
+19. What do people want the next earnings report to look like?
 
 *Management Quality*
-19. What's the CEO's track record at previous companies?
-20. Has management delivered on past guidance and targets?
-21. Is the CEO buying or selling stock? What % of the company do they own?
-22. How is executive compensation tied to stock price vs. operational
+20. What's the CEO's track record at previous companies?
+21. Has management delivered on past guidance and targets?
+22. Is the CEO buying or selling stock? What % of the company do they own?
+23. How is executive compensation tied to stock price vs. operational
     metrics?
-23. What's their acquisition history -- do deals create or destroy value?
-24. Is there frequent turnover in CFO/COO roles?
-25. How do they communicate in earnings calls -- defensive or transparent?
+24. What's their acquisition history -- do deals create or destroy value?
+25. Is there frequent turnover in CFO/COO roles?
+26. How do they communicate in earnings calls -- defensive or transparent?
 
 *Technical/Macro*
-26. Is this stock correlated to sector trends or macro variables (rates,
+27. Is this stock correlated to sector trends or macro variables (rates,
     commodities, AI adoption)? The payload's `financials.technicals` and
     `financials.price_stats` give you the stock's own recent behavior --
     connect it to the relevant macro/sector backdrop via research.
-27. What's a sensible entry and exit price, and why? Use the DCF implied
+28. What's a sensible entry and exit price, and why? Use the DCF implied
     price, the Monte Carlo percentile range, and the current price from the
     payload as your anchors, not a bare guess.
 
 **Step 3 -- Synthesize, don't just list.**
-Before the itemized answers, write a short (4-6 sentence) top-line summary:
-the core bull/bear tension in one or two sentences, the screener score and
-what it's flagging, and the single thing that would most change the picture
-if it happened. This is what makes the message skimmable -- someone should
-be able to read just this and the closing question and have the gist.
+Before the itemized answers, write a short (4-7 sentence) top-line summary:
+what recently moved the stock and by how much (from Question 1) if there's
+been a meaningful recent move, the core bull/bear tension in one or two
+sentences, the screener score and what it's flagging, and the single thing
+that would most change the picture if it happened. This is what makes the
+message skimmable -- someone should be able to read just this and the
+closing question and have the gist.
 
 **Step 4 -- Post to Slack.**
 Do NOT use any Slack connector, integration, or tool available to you (e.g. a
@@ -152,9 +171,9 @@ bot hasn't been invited to `SLACK_CHANNEL` yet -- invite it with
 Format the message as:
 - Ticker and company name as a header line.
 - The Step 3 top-line summary.
-- The 27 answers, grouped under their category headers (Business & Moat,
-  Financial Health, Valuation & Thesis, Risk & Catalysts, Management
-  Quality, Technical/Macro), numbered 1-27.
+- The 28 answers, grouped under their category headers (Recent Price Action,
+  Business & Moat, Financial Health, Valuation & Thesis, Risk & Catalysts,
+  Management Quality, Technical/Macro), numbered 1-28.
 - Close with one short question aimed at the reader that requires connecting
   two things from the write-up to answer (e.g. the bull case against the
   moat-erosion risk, or the DCF entry price against the bear case) -- not a
