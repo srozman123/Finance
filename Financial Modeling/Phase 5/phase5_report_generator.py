@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 # REPORT_TICKER — change this to generate a
 # different report when running the file directly
 # ─────────────────────────────────────────────
-REPORT_TICKER = "INTU"
+REPORT_TICKER = "TTD"
 
 REPORT_DIR = os.path.join(os.path.dirname(__file__), "reports")
 os.makedirs(REPORT_DIR, exist_ok=True)
@@ -65,6 +65,127 @@ def safe_loc(df, label):
         return df.loc[label]
     except KeyError:
         return None
+
+
+def get_quarterly_fallback(t, fy0):
+    """
+    When quarters have been reported since the latest annual filing (fy0),
+    the next FY's numbers aren't fully out yet — return recent quarters
+    (including ones before fy0, for trend context) so they can supplement
+    the annual financial statements table.
+
+    Returns (show_quarterly, q_cols, q_items):
+      show_quarterly: True if at least one available quarter is newer than fy0
+      q_cols:         all available quarterly columns (newest first)
+      q_items:        [(label, row_or_None), ...] aligned with q_cols
+    """
+    try:
+        q_is = t.quarterly_financials.dropna(axis=1, how="all")
+        q_cf = t.quarterly_cashflow.dropna(axis=1, how="all")
+    except Exception:
+        return False, [], []
+
+    if q_is.empty:
+        return False, [], []
+
+    q_cols = list(q_is.columns)
+    if not any(c > fy0 for c in q_cols):
+        return False, [], []
+
+    q_items = [
+        ("Total Revenue",       safe_loc(q_is, "Total Revenue")),
+        ("Gross Profit",        safe_loc(q_is, "Gross Profit")),
+        ("Operating Income",    safe_loc(q_is, "Operating Income")),
+        ("Net Income",          safe_loc(q_is, "Net Income")),
+        ("Operating Cash Flow", safe_loc(q_cf, "Operating Cash Flow")),
+        ("Free Cash Flow",      safe_loc(q_cf, "Free Cash Flow")),
+        ("Capital Expenditure", safe_loc(q_cf, "Capital Expenditure")),
+    ]
+    return True, q_cols, q_items
+
+
+def _seasonal_fy_projection(row, q_cols, fy0, fy_actual):
+    """
+    Projects the in-progress FY's total for one line item by applying the
+    YoY growth observed in the quarters reported so far (vs. the matching
+    quarters a year ago) to the last full FY's actual total. Seasonal by
+    construction since it always compares the same quarter YoY.
+    """
+    if row is None or fy_actual is None or fy_actual == 0:
+        return None
+    new_q = [c for c in q_cols if c > fy0]
+    if not new_q:
+        return None
+    num = den = 0.0
+    matched = 0
+    for c in new_q:
+        target  = c - pd.DateOffset(years=1)
+        prior_c = min(q_cols, key=lambda x: abs((x - target).days))
+        if abs((prior_c - target).days) > 45:
+            continue
+        v_new, v_prior = row.get(c), row.get(prior_c)
+        if v_new is None or v_prior is None:
+            continue
+        if (isinstance(v_new, float) and np.isnan(v_new)) or \
+           (isinstance(v_prior, float) and np.isnan(v_prior)):
+            continue
+        num += v_new
+        den += v_prior
+        matched += 1
+    if matched == 0 or den == 0:
+        return None
+    return fy_actual * (num / den)
+
+
+def _analyst_fy_estimate(t, shares):
+    """Current-FY consensus Revenue / Net Income from analyst estimates, where covered."""
+    rev_est = ni_est = None
+    try:
+        re_df = t.revenue_estimate
+        if re_df is not None and "0y" in re_df.index:
+            v = re_df.loc["0y", "avg"]
+            rev_est = float(v) if pd.notna(v) else None
+    except Exception:
+        pass
+    try:
+        ee_df = t.earnings_estimate
+        if ee_df is not None and "0y" in ee_df.index and shares:
+            eps = ee_df.loc["0y", "avg"]
+            if pd.notna(eps):
+                ni_est = float(eps) * shares
+    except Exception:
+        pass
+    return rev_est, ni_est
+
+
+def predict_fy(t, fy0, q_cols, q_items, fy_actuals, shares):
+    """
+    Projects the in-progress FY's line items by blending a YoY-seasonal
+    run-rate (derived from quarters reported so far) with analyst consensus
+    estimates — the latter only exists for Revenue and Net Income via
+    yfinance, so other line items fall back to the seasonal figure alone.
+
+    Returns (fy_label, projections, note).
+    """
+    new_q    = [c for c in q_cols if c > fy0]
+    fy_label = f"FY{max(new_q).year}e" if new_q else "FYe"
+    rev_est, ni_est = _analyst_fy_estimate(t, shares)
+
+    projections = {}
+    for label, row in q_items:
+        seasonal = _seasonal_fy_projection(row, q_cols, fy0, fy_actuals.get(label))
+        if label == "Total Revenue":
+            vals = [v for v in (seasonal, rev_est) if v is not None]
+        elif label == "Net Income":
+            vals = [v for v in (seasonal, ni_est) if v is not None]
+        else:
+            vals = [v for v in (seasonal,) if v is not None]
+        projections[label] = (sum(vals) / len(vals)) if vals else None
+
+    note = "Projected FY = YoY seasonal run-rate"
+    if rev_est is not None or ni_est is not None:
+        note += " blended with analyst consensus (Revenue & Net Income only)"
+    return fy_label, projections, note
 
 
 def run_dcf_inner(base_fcf, fcf_growth, wacc, terminal_growth,
@@ -172,6 +293,8 @@ def get_report_data(ticker: str) -> dict:
     cl_row     = safe_loc(bs,  "Current Liabilities")
     cash_row   = safe_loc(bs,  "Cash And Cash Equivalents")
 
+    show_quarterly, q_cols, q_items = get_quarterly_fallback(t, fy0)
+
     def fv(row, col):
         try:
             v = row[col]
@@ -196,6 +319,21 @@ def get_report_data(ticker: str) -> dict:
     company_name  = info.get("longName", ticker)
     market_cap    = current_price * shares if current_price and shares else None
     market_cap_b  = market_cap / 1e9 if market_cap else None
+
+    if show_quarterly:
+        fy_actuals = {
+            "Total Revenue":       revenue,
+            "Gross Profit":        gross_p,
+            "Operating Income":    op_income,
+            "Net Income":          net_income,
+            "Operating Cash Flow": fv(opcf_row, fy0)  if opcf_row  is not None else None,
+            "Free Cash Flow":      free_cf,
+            "Capital Expenditure": fv(capex_row, fy0) if capex_row is not None else None,
+        }
+        fy_label, fy_projections, fy_note = predict_fy(
+            t, fy0, q_cols, q_items, fy_actuals, shares)
+    else:
+        fy_label, fy_projections, fy_note = None, {}, None
 
     gross_margin = gross_p    / revenue    if gross_p    and revenue    else None
     net_margin   = net_income / revenue    if net_income and revenue    else None
@@ -440,6 +578,23 @@ def get_report_data(ticker: str) -> dict:
         "market_cap_b":  sf(market_cap_b),
         "fy_years":      fy_years,
         "financials_table": financials_table,
+        "quarterly_supplement": {
+            "shown":    show_quarterly,
+            "quarters": [c.strftime("%Y-%m-%d") for c in q_cols],
+            "note": (f"Quarterly data reported since the FY{fy0.year} annual "
+                     f"filing — next FY not yet fully reported"
+                     if show_quarterly else None),
+            "financials_table": {
+                label: ([sf(fv(row, c)) for c in q_cols]
+                        if row is not None else [None] * len(q_cols))
+                for label, row in q_items
+            },
+            "fy_projection": ({
+                "label":  fy_label,
+                "values": {k: sf(v) for k, v in fy_projections.items()},
+                "note":   fy_note,
+            } if show_quarterly else None),
+        },
         "metrics": {
             "gross_margin":   sf(gross_margin),
             "net_margin":     sf(net_margin),
@@ -563,6 +718,8 @@ def generate_report(ticker):
         cl_row    = safe_loc(bs,  "Current Liabilities")
         cash_row  = safe_loc(bs,  "Cash And Cash Equivalents")
 
+        show_quarterly, q_cols, q_items = get_quarterly_fallback(t, fy0)
+
         def fv(row, col):
             """Safe float from row/col."""
             try:
@@ -588,6 +745,21 @@ def generate_report(ticker):
         company_name  = info.get("longName", ticker)
         market_cap    = current_price * shares if current_price and shares else None
         market_cap_b  = market_cap / 1e9 if market_cap else None
+
+        if show_quarterly:
+            fy_actuals = {
+                "Total Revenue":       revenue,
+                "Gross Profit":        gross_p,
+                "Operating Income":    op_income,
+                "Net Income":          net_income,
+                "Operating Cash Flow": fv(opcf_row, fy0)  if opcf_row  is not None else None,
+                "Free Cash Flow":      free_cf,
+                "Capital Expenditure": fv(capex_row, fy0) if capex_row is not None else None,
+            }
+            fy_label, fy_projections, fy_note = predict_fy(
+                t, fy0, q_cols, q_items, fy_actuals, shares)
+        else:
+            fy_label, fy_projections, fy_note = None, {}, None
 
         # ── Derived metrics ──
         gross_margin   = gross_p    / revenue    if gross_p    and revenue    else None
@@ -908,9 +1080,16 @@ def generate_report(ticker):
             plt.close(fig)
 
             # ── PAGE 3: FINANCIAL STATEMENTS ────────────────────────
-            fig, ax = plt.subplots(figsize=(11, 8.5))
+            fig = plt.figure(figsize=(11, 8.5))
+            if show_quarterly:
+                gs3 = GridSpec(2, 1, figure=fig, height_ratios=[3, 1.3],
+                               hspace=0.35, top=0.88, bottom=0.11,
+                               left=0.04, right=0.96)
+                ax = fig.add_subplot(gs3[0])
+            else:
+                fig.subplots_adjust(top=0.88, bottom=0.08, left=0.04, right=0.96)
+                ax = fig.add_subplot(111)
             ax.axis("off")
-            fig.subplots_adjust(top=0.88, bottom=0.08, left=0.04, right=0.96)
 
             fs_items = [
                 ("Total Revenue  (top line)",                     rev_row),
@@ -954,6 +1133,53 @@ def generate_report(ticker):
                 if c == 0:
                     cell.set_text_props(ha="left")
                     cell.PAD = 0.02
+
+            if show_quarterly:
+                ax_q = fig.add_subplot(gs3[1])
+                ax_q.axis("off")
+
+                q_col_headers = (["Line Item"] + [c.strftime("%b %Y") for c in q_cols]
+                                  + [fy_label])
+                q_table_data  = []
+                for label, row in q_items:
+                    cells = [label]
+                    for c in q_cols:
+                        v = fv(row, c) if row is not None else None
+                        cells.append(fmt_b(v))
+                    cells.append(fmt_b(fy_projections.get(label)))
+                    q_table_data.append(cells)
+
+                ax_q.set_title(
+                    f"Quarterly Trend & {fy_label} Projection  —  quarters "
+                    f"reported since the FY{fy0.year} annual filing (in $B)",
+                    fontsize=9, fontweight="bold", pad=8)
+
+                tbl_q = ax_q.table(cellText=q_table_data,
+                                   colLabels=q_col_headers,
+                                   cellLoc="center", loc="center")
+                tbl_q.auto_set_font_size(False)
+                tbl_q.set_fontsize(7)
+                tbl_q.scale(1, 1.4)
+                n_cols_q = len(q_col_headers)
+                for (r, c), cell in tbl_q.get_celld().items():
+                    cell.set_edgecolor("#dddddd")
+                    if r == 0:
+                        cell.set_facecolor("#dce6f1")
+                        cell.set_text_props(fontweight="bold")
+                    elif c == n_cols_q - 1:
+                        cell.set_facecolor("#fff9c4")
+                        cell.set_text_props(style="italic")
+                    elif r % 2 == 0:
+                        cell.set_facecolor("#f7f9fc")
+                    else:
+                        cell.set_facecolor("white")
+                    if c == 0:
+                        cell.set_text_props(ha="left")
+                        cell.PAD = 0.02
+
+                if fy_note:
+                    fig.text(0.5, 0.085, fy_note, ha="center",
+                             fontsize=6.5, color="#555555", style="italic")
 
             add_page_chrome(fig, ticker, report_date, "Page 3 — Financial Statements")
             pdf.savefig(fig, bbox_inches="tight")

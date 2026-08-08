@@ -1,0 +1,30 @@
+name: Stock Deep Dive
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: 'Ticker to run the deep dive on'
+        required: true
+
+jobs:
+  deep-dive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r "Financial Modeling/Stock Deep Dive/requirements.txt"
+
+      - name: Run stock deep dive
+        env:
+          STOCK_DEEP_DIVE_ROUTINE_FIRE_URL: ${{ secrets.STOCK_DEEP_DIVE_ROUTINE_FIRE_URL }}
+          STOCK_DEEP_DIVE_ROUTINE_TOKEN:    ${{ secrets.STOCK_DEEP_DIVE_ROUTINE_TOKEN }}
+        run: python "Financial Modeling/Stock Deep Dive/stock_deep_dive.py" "${{ github.event.inputs.ticker }}"

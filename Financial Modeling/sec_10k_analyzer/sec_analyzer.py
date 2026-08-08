@@ -399,6 +399,27 @@ _SECTION_KEYWORDS = {
     "available information", "sec filings",
 }
 
+# Keywords that indicate a named subsection in Item 7 (MD&A). Item 7 is
+# prose-heavy and structured differently from Item 1, so it gets its own
+# keyword set rather than reusing _SECTION_KEYWORDS.
+_ITEM7_SECTION_KEYWORDS = {
+    "overview", "executive overview", "business overview",
+    "results of operations", "results of operation",
+    "revenue", "revenues", "net revenue",
+    "cost of revenue", "operating expenses", "gross margin",
+    "liquidity", "capital resources", "liquidity and capital resources",
+    "cash flow", "cash flows", "cash and cash equivalents",
+    "critical accounting", "critical accounting policies",
+    "critical accounting estimates", "accounting policies",
+    "off-balance sheet", "off balance sheet",
+    "contractual obligations", "commitments",
+    "non-gaap", "non-gaap measures", "adjusted ebitda",
+    "seasonality", "seasonal",
+    "market risk", "quantitative and qualitative disclosures",
+    "recent accounting pronouncements", "new accounting pronouncements",
+    "inflation", "foreign currency",
+}
+
 
 def fetch_filing_html(url: str) -> str:
     """Fetch the raw HTML of a 10-K filing document."""
@@ -407,7 +428,7 @@ def fetch_filing_html(url: str) -> str:
     return resp.text
 
 
-def _is_heading_line(text: str) -> bool:
+def _is_heading_line(text: str, keywords: set[str]) -> bool:
     """
     Heuristic: return True if a short line of text looks like a section heading.
     A heading is typically 1–6 words, matches a known keyword, and is not a
@@ -419,23 +440,23 @@ def _is_heading_line(text: str) -> bool:
     word_count = len(t.split())
     if word_count > 7:
         return False
-    return any(kw in t.lower() for kw in _SECTION_KEYWORDS)
+    return any(kw in t.lower() for kw in keywords)
 
 
-def extract_item_1(html: str) -> dict:
+def _extract_item_section(
+    html: str,
+    boundary: re.Pattern,
+    keywords: set[str],
+    fallback_title: str,
+) -> dict:
     """
-    Extract and structure Item 1 content from a 10-K filing HTML document.
+    Shared implementation behind extract_item_1() and extract_item_7(): isolate
+    a numbered Item's text region from a 10-K's HTML via `boundary`, then group
+    it into titled subsections using `keywords` to detect headings.
 
-    Returns a dict:
-      {
-        "sections": [{"title": str, "text": str}, ...],   # named subsections
-        "raw":      str,                                   # full Item 1 text
-      }
-
-    The 'sections' list is populated by scanning for bold/heading elements
-    within the Item 1 HTML region that match known subsection keywords.
-    If no subsections are found, 'sections' will contain a single entry
-    with title "Business Overview" and the full text as the body.
+    Returns {"sections": [{"title": str, "text": str}, ...], "raw": str}.
+    If no subsections are detected, 'sections' has one entry titled
+    `fallback_title` holding the full text.
     """
     soup = BeautifulSoup(html, "lxml")
 
@@ -443,7 +464,7 @@ def extract_item_1(html: str) -> dict:
     for tag in soup(["script", "style", "ix:header", "ix:nonfraction", "ix:nonNumeric"]):
         tag.decompose()
 
-    # ── Step 1: Isolate the Item 1 region ────────────────────────────────────
+    # ── Step 1: Isolate the Item region ──────────────────────────────────────
     # Use newline-separated text so paragraph/heading structure is preserved.
     # 10-K documents contain a Table of Contents at the top with a short entry
     # like "Item 1. Business ... 3" — the regex will match that first. We use
@@ -451,27 +472,23 @@ def extract_item_1(html: str) -> dict:
     # body section, which is orders of magnitude longer.
     line_text = soup.get_text(separator="\n", strip=True)
 
-    boundary = re.compile(
-        r"Item\s+1[\.\s]+Business\b(.*?)(?=Item\s+1A|Item\s+2\b|ITEM\s+1A|ITEM\s+2\b)",
-        re.IGNORECASE | re.DOTALL,
-    )
     all_matches = boundary.findall(line_text)
     if all_matches:
         # Take the longest match — that's the actual body, not the TOC entry
-        item1_raw = max(all_matches, key=len)
-        item1_raw = re.sub(r"\n{3,}", "\n\n", item1_raw).strip()
+        item_raw = max(all_matches, key=len)
+        item_raw = re.sub(r"\n{3,}", "\n\n", item_raw).strip()
     else:
-        item1_raw = line_text[:25000]
+        item_raw = line_text[:25000]
 
     # ── Step 2: Split into lines and group under detected headings ───────────
-    lines = [l.strip() for l in item1_raw.split("\n") if l.strip()]
+    lines = [l.strip() for l in item_raw.split("\n") if l.strip()]
 
     sections: list[dict] = []
-    current_title = "Business Overview"
+    current_title = fallback_title
     current_body:  list[str] = []
 
     for line in lines:
-        if _is_heading_line(line):
+        if _is_heading_line(line, keywords):
             # Save the section we've been accumulating
             body = " ".join(current_body).strip()
             # Clean up repeated whitespace and registry marks
@@ -500,13 +517,56 @@ def extract_item_1(html: str) -> dict:
 
     # ── Fallback: if no structure was found, return the raw text as one block ─
     if not merged:
-        raw_clean = re.sub(r"\s+", " ", item1_raw).strip()
-        merged = [{"title": "Business Overview", "text": raw_clean}]
+        raw_clean = re.sub(r"\s+", " ", item_raw).strip()
+        merged = [{"title": fallback_title, "text": raw_clean}]
 
     return {
         "sections": merged,
-        "raw":      re.sub(r"\s+", " ", item1_raw).strip(),
+        "raw":      re.sub(r"\s+", " ", item_raw).strip(),
     }
+
+
+# The lookahead requires a preceding newline before the terminating "Item X"
+# -- real section headers sit alone on their own line, while prose elsewhere
+# in the filing (e.g. MD&A routinely says "...included in Part II, Item 8 of
+# this Form 10-K") references the next item number mid-sentence. Without the
+# "\n" requirement, that first inline cross-reference is mistaken for the
+# section boundary and truncates the capture almost immediately.
+#
+# "B\s?usiness" / "M\s?anagement" (rather than a plain literal) tolerates a
+# filing that renders a heading's first letter as a separately-styled inline
+# element (a common "drop cap" pattern) -- get_text() then inserts a spurious
+# newline mid-word, e.g. MSFT's actual filing reads "ITEM 1. B\nUSINESS".
+_ITEM_1_BOUNDARY = re.compile(
+    r"Item\s+1[\.\s]+B\s?usiness\b(.*?)(?=\n\s*Item\s+1A|\n\s*Item\s+2\b)",
+    re.IGNORECASE | re.DOTALL,
+)
+
+_ITEM_7_BOUNDARY = re.compile(
+    # Filings commonly render the apostrophe in "Management's" as a curly
+    # quote (’) rather than ASCII "'" -- match either.
+    r"Item\s+7[\.\s]+M\s?anagement[’']?s?\s+Discussion\b(.*?)(?=\n\s*Item\s+7A|\n\s*Item\s+8\b)",
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def extract_item_1(html: str) -> dict:
+    """
+    Extract and structure Item 1 (Business) content from a 10-K filing HTML
+    document. See _extract_item_section() for the extraction strategy.
+    """
+    return _extract_item_section(html, _ITEM_1_BOUNDARY, _SECTION_KEYWORDS,
+                                  fallback_title="Business Overview")
+
+
+def extract_item_7(html: str) -> dict:
+    """
+    Extract and structure Item 7 (Management's Discussion and Analysis of
+    Financial Condition and Results of Operations) content from a 10-K filing
+    HTML document. See _extract_item_section() for the extraction strategy.
+    """
+    return _extract_item_section(html, _ITEM_7_BOUNDARY, _ITEM7_SECTION_KEYWORDS,
+                                  fallback_title="MD&A Overview")
 
 
 # =============================================================================
@@ -629,11 +689,14 @@ def analyze_company(ticker: str, target_year: int = None) -> dict:
             "margins":          calculate_margins(rev or 0, cogs, op, ni),
         }
 
-    # Fetch and parse Item 1 from the actual filing document.
+    # Fetch and parse Item 1 (Business) and Item 7 (MD&A) from the actual
+    # filing document. Both are parsed from the same HTML fetch — no extra
+    # network call for Item 7.
     # Strategy: use the primary_doc URL embedded in the submissions API first
     # (most reliable); fall back to walking the filing index JSON if that fails.
-    console.print(f"[dim]  Fetching 10-K document for Item 1...[/dim]")
+    console.print(f"[dim]  Fetching 10-K document for Item 1 / Item 7...[/dim]")
     item1: dict = {"sections": [], "raw": ""}
+    item7: dict = {"sections": [], "raw": ""}
     try:
         doc_url = filing.get("primary_doc")
         if not doc_url:
@@ -642,9 +705,14 @@ def analyze_company(ticker: str, target_year: int = None) -> dict:
         time.sleep(0.15)   # polite delay per SEC crawling guidelines
         html    = fetch_filing_html(doc_url)
         item1   = extract_item_1(html)
+        item7   = extract_item_7(html)
     except Exception as exc:
         item1 = {
             "sections": [{"title": "Error", "text": f"Item 1 unavailable: {exc}"}],
+            "raw": "",
+        }
+        item7 = {
+            "sections": [{"title": "Error", "text": f"Item 7 unavailable: {exc}"}],
             "raw": "",
         }
 
@@ -656,6 +724,7 @@ def analyze_company(ticker: str, target_year: int = None) -> dict:
         "years":            revenue_years,   # newest first
         "yearly":           yearly,
         "item1":            item1,
+        "item7":            item7,
         "has_financials":   bool(revenue_years),
     }
 
@@ -962,7 +1031,7 @@ def export_csv(results: list[dict], filename: str) -> None:
 
 # Ticker symbol(s) to analyze. Add more to the list to compare companies.
 #   e.g. TICKERS = ["AAPL", "MSFT", "GOOGL"]
-TICKERS     = ["INTU"]
+TICKERS     = ["OKLO"]
 
 # Target fiscal year. Set to None to use the most recent 10-K available.
 #   e.g. TARGET_YEAR = 2022
