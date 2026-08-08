@@ -163,10 +163,16 @@ curl -X POST https://slack.com/api/chat.postMessage \
 ```
 
 Use the `SLACK_BOT_TOKEN` and `SLACK_CHANNEL` environment variables already
-set on this routine. Check the JSON response for `"ok": true`; if it's
-`false`, report the `error` field (common one: `not_in_channel` means the
-bot hasn't been invited to `SLACK_CHANNEL` yet -- invite it with
-`/invite @YourAppName` in Slack, this can't be fixed from here).
+set on this routine. Run this curl command exactly once. Check the JSON
+response body for `"ok": true` -- if you see it, the message was posted;
+stop, do not run the command again "to be safe" even if the tool output
+around it looked odd (a nonzero shell exit code, a truncated echo, a slow
+response). Only re-run the curl if the response body itself explicitly
+contains `"ok": false`, and if so report the `error` field (common one:
+`not_in_channel` means the bot hasn't been invited to `SLACK_CHANNEL` yet --
+invite it with `/invite @YourAppName` in Slack, this can't be fixed from
+here). Re-running on anything other than an explicit `"ok": false` is what
+causes duplicate posts.
 
 Format the message as:
 - Ticker and company name as a header line.
