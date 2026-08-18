@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-17T20:54:51.596106+00:00",
+  "timestamp": "2026-08-18T12:34:31.224232+00:00",
   "tickers": {
     "CVX": {
       "price": 202.7,
-      "rsi": 67.12174520321008,
+      "rsi": 64.52650399141346,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -17,11 +17,11 @@
       "dcf_implied": 126.2,
       "dcf_vs_market_pct": -37.74,
       "next_earnings_date": "2026-10-30",
-      "days_to_earnings": 74
+      "days_to_earnings": 73
     },
     "MU": {
       "price": 1011.75,
-      "rsi": 59.536448342713705,
+      "rsi": 56.299645651491936,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -35,11 +35,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-09-23",
-      "days_to_earnings": 37
+      "days_to_earnings": 36
     },
     "MSFT": {
       "price": 480.35,
-      "rsi": 62.19737117487999,
+      "rsi": 70.92350571924851,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -53,11 +53,11 @@
       "dcf_implied": 249.58,
       "dcf_vs_market_pct": -48.04,
       "next_earnings_date": "2026-10-28",
-      "days_to_earnings": 72
+      "days_to_earnings": 71
     },
     "HAL": {
       "price": 34.73,
-      "rsi": 57.123266817857555,
+      "rsi": 55.58926262724769,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -66,16 +66,16 @@
       "fcf_conversion": 1.3031956352299299,
       "rev_cagr": null,
       "debt_equity": 0.7774591339260108,
-      "ev_ebitda": 10.697029041396133,
+      "ev_ebitda": 10.72119157304388,
       "screener_score": 4,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-20",
-      "days_to_earnings": 64
+      "days_to_earnings": 63
     },
     "WMT": {
       "price": 114.33,
-      "rsi": 53.03046343913527,
+      "rsi": 56.51485185096718,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -89,11 +89,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-08-20",
-      "days_to_earnings": 3
+      "days_to_earnings": 2
     },
     "BAC": {
       "price": 63.89,
-      "rsi": 62.960498623054626,
+      "rsi": 68.44511467837033,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -107,11 +107,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-14",
-      "days_to_earnings": 58
+      "days_to_earnings": 57
     },
     "DKNG": {
       "price": 25.3,
-      "rsi": 54.31337858300249,
+      "rsi": 60.26302047000595,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -125,11 +125,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-05",
-      "days_to_earnings": 80
+      "days_to_earnings": 79
     },
     "CRGO": {
       "price": 1.67,
-      "rsi": 70.44129991645538,
+      "rsi": 53.5756296379129,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -142,12 +142,12 @@
       "screener_score": 3,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
-      "next_earnings_date": "2026-08-17",
-      "days_to_earnings": 0
+      "next_earnings_date": null,
+      "days_to_earnings": null
     },
     "RZLV": {
       "price": 2.61,
-      "rsi": 51.91584565962755,
+      "rsi": 55.44265059138534,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -161,11 +161,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-09-01",
-      "days_to_earnings": 15
+      "days_to_earnings": 14
     },
     "RGTI": {
       "price": 18.67,
-      "rsi": 59.0135217276868,
+      "rsi": 60.0083787808002,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -183,7 +183,7 @@
     },
     "ALAB": {
       "price": 320.17,
-      "rsi": 48.26957973961164,
+      "rsi": 48.600885664716245,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -197,11 +197,11 @@
       "dcf_implied": 42.4,
       "dcf_vs_market_pct": -86.76,
       "next_earnings_date": "2026-11-03",
-      "days_to_earnings": 78
+      "days_to_earnings": 77
     },
     "CTRE": {
       "price": 39.26,
-      "rsi": 40.62831967080707,
+      "rsi": 36.32622340601733,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -219,7 +219,7 @@
     },
     "SMCI": {
       "price": 38.28,
-      "rsi": 65.64743047469014,
+      "rsi": 70.69358666395044,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -233,11 +233,11 @@
       "dcf_implied": 63.9,
       "dcf_vs_market_pct": 66.92,
       "next_earnings_date": "2026-11-03",
-      "days_to_earnings": 78
+      "days_to_earnings": 77
     },
     "SOUN": {
       "price": 7.04,
-      "rsi": 52.39466724769769,
+      "rsi": 59.010413688577955,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -251,11 +251,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-05",
-      "days_to_earnings": 80
+      "days_to_earnings": 79
     },
     "BE": {
       "price": 232.16,
-      "rsi": 51.76341889352307,
+      "rsi": 51.082025634720374,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -269,11 +269,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-27",
-      "days_to_earnings": 71
+      "days_to_earnings": 70
     },
     "TATT": {
       "price": 40.63,
-      "rsi": 48.63799525122403,
+      "rsi": 51.93161851832078,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -283,7 +283,7 @@
       "rev_cagr": null,
       "debt_equity": 0.09997108696021906,
       "ev_ebitda": 20.96359616372732,
-      "screener_score": 3,
+      "screener_score": 2,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": null,
@@ -291,7 +291,7 @@
     },
     "KLAR": {
       "price": 19.51,
-      "rsi": 51.13457293433311,
+      "rsi": 62.197180365950224,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -305,11 +305,11 @@
       "dcf_implied": 46.17,
       "dcf_vs_market_pct": 136.66,
       "next_earnings_date": "2026-08-18",
-      "days_to_earnings": 1
+      "days_to_earnings": 0
     },
     "SNPS": {
       "price": 413.22,
-      "rsi": 51.54941649895089,
+      "rsi": 56.526725944830424,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -323,11 +323,11 @@
       "dcf_implied": 196.28,
       "dcf_vs_market_pct": -52.5,
       "next_earnings_date": "2026-08-26",
-      "days_to_earnings": 9
+      "days_to_earnings": 8
     },
     "NVO": {
       "price": 44.88,
-      "rsi": 39.58597788864006,
+      "rsi": 43.03082866138167,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -336,16 +336,16 @@
       "fcf_conversion": 0.2830017377042779,
       "rev_cagr": 0.2042851902310494,
       "debt_equity": 0.6748777358062737,
-      "ev_ebitda": 1.6134842165153864,
+      "ev_ebitda": 1.6252032247071058,
       "screener_score": 7,
-      "dcf_implied": 566.96,
-      "dcf_vs_market_pct": 1163.29,
+      "dcf_implied": 560.03,
+      "dcf_vs_market_pct": 1147.84,
       "next_earnings_date": "2026-11-04",
-      "days_to_earnings": 79
+      "days_to_earnings": 78
     },
     "TEM": {
       "price": 51.64,
-      "rsi": 52.27066692171366,
+      "rsi": 53.32739620120324,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -359,11 +359,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-03",
-      "days_to_earnings": 78
+      "days_to_earnings": 77
     },
     "PLTR": {
       "price": 172.55,
-      "rsi": 66.73122634470735,
+      "rsi": 68.13620296058089,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -377,11 +377,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-02",
-      "days_to_earnings": 77
+      "days_to_earnings": 76
     },
     "META": {
       "price": 568.97,
-      "rsi": 41.89041139572949,
+      "rsi": 47.62672308523756,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -395,11 +395,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-28",
-      "days_to_earnings": 72
+      "days_to_earnings": 71
     },
     "AVGO": {
       "price": 392.43,
-      "rsi": 46.27074651256418,
+      "rsi": 46.50987862919437,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -413,11 +413,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-09-02",
-      "days_to_earnings": 16
+      "days_to_earnings": 15
     },
     "TSLA": {
       "price": 339.3,
-      "rsi": 47.43661193174052,
+      "rsi": 48.81739230188035,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -431,11 +431,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-21",
-      "days_to_earnings": 65
+      "days_to_earnings": 64
     },
     "AAPL": {
       "price": 305.59,
-      "rsi": 43.55073622362382,
+      "rsi": 43.81778996392375,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -449,11 +449,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-29",
-      "days_to_earnings": 73
+      "days_to_earnings": 72
     },
     "RDDT": {
       "price": 164.5,
-      "rsi": 48.37610136569919,
+      "rsi": 55.2962634603632,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -463,15 +463,15 @@
       "rev_cagr": 0.489345066754274,
       "debt_equity": 0.007925469044785353,
       "ev_ebitda": 50.4520789112794,
-      "screener_score": 6,
+      "screener_score": 5,
       "dcf_implied": 117.93,
       "dcf_vs_market_pct": -28.31,
       "next_earnings_date": "2026-10-29",
-      "days_to_earnings": 73
+      "days_to_earnings": 72
     },
     "HOOD": {
       "price": 96.25,
-      "rsi": 49.71775069919265,
+      "rsi": 48.760176258615644,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -485,11 +485,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-04",
-      "days_to_earnings": 79
+      "days_to_earnings": 78
     },
     "DDOG": {
       "price": 247.32,
-      "rsi": 47.72682591078903,
+      "rsi": 50.779426086997844,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -499,15 +499,15 @@
       "rev_cagr": 0.2694953937625746,
       "debt_equity": 0.34269410638105186,
       "ev_ebitda": 431.8408816446893,
-      "screener_score": 6,
+      "screener_score": 5,
       "dcf_implied": 75.48,
       "dcf_vs_market_pct": -69.48,
       "next_earnings_date": "2026-11-05",
-      "days_to_earnings": 80
+      "days_to_earnings": 79
     },
     "INTC": {
       "price": 103.49,
-      "rsi": 52.2502823401411,
+      "rsi": 51.25206265586725,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -521,11 +521,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-22",
-      "days_to_earnings": 66
+      "days_to_earnings": 65
     },
     "OKLO": {
       "price": 43.88,
-      "rsi": 47.44991928606173,
+      "rsi": 48.272089170564804,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -543,7 +543,7 @@
     },
     "ISRG": {
       "price": 390.33,
-      "rsi": 53.622280258069516,
+      "rsi": 55.872314711809665,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -557,13 +557,13 @@
       "dcf_implied": 109.91,
       "dcf_vs_market_pct": -71.84,
       "next_earnings_date": "2026-10-20",
-      "days_to_earnings": 64
+      "days_to_earnings": 63
     },
     "PAYC": {
       "price": 214.19,
-      "rsi": 72.97098547337302,
+      "rsi": 76.50513095475344,
       "death_cross_active": false,
-      "golden_cross_5d": false,
+      "golden_cross_5d": true,
       "death_cross_5d": false,
       "gross_margin": 0.8316518009455574,
       "net_margin": 0.22098747380221279,
@@ -575,11 +575,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-04",
-      "days_to_earnings": 79
+      "days_to_earnings": 78
     },
     "TTD": {
       "price": 13.4,
-      "rsi": 31.844221857100123,
+      "rsi": 34.46633645932886,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -593,11 +593,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-05",
-      "days_to_earnings": 80
+      "days_to_earnings": 79
     },
     "AMD": {
       "price": 506.0,
-      "rsi": 51.93465609338057,
+      "rsi": 53.733277135993525,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -611,11 +611,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-03",
-      "days_to_earnings": 78
+      "days_to_earnings": 77
     },
     "AMBA": {
       "price": 78.54,
-      "rsi": 51.23714666195784,
+      "rsi": 56.46343600153161,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -629,11 +629,11 @@
       "dcf_implied": 11.56,
       "dcf_vs_market_pct": -85.28,
       "next_earnings_date": "2026-09-03",
-      "days_to_earnings": 17
+      "days_to_earnings": 16
     },
     "GOOG": {
       "price": 341.45,
-      "rsi": 45.118665765923275,
+      "rsi": 46.27471750183731,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -647,11 +647,11 @@
       "dcf_implied": 293.84,
       "dcf_vs_market_pct": -13.94,
       "next_earnings_date": "2026-10-28",
-      "days_to_earnings": 72
+      "days_to_earnings": 71
     },
     "QBTS": {
-      "price": 20.87,
-      "rsi": 53.359119648758536,
+      "price": 16.21,
+      "rsi": 54.691829349521406,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -660,16 +660,16 @@
       "fcf_conversion": 0.21486106651796025,
       "rev_cagr": null,
       "debt_equity": 0.05099210307076728,
-      "ev_ebitda": -20.400828914673557,
+      "ev_ebitda": -15.46662383981901,
       "screener_score": 3,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-11-05",
-      "days_to_earnings": 80
+      "days_to_earnings": 79
     },
     "ORCL": {
       "price": 146.65,
-      "rsi": 52.7437170620532,
+      "rsi": 56.122137688957125,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -683,11 +683,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-09-10",
-      "days_to_earnings": 24
+      "days_to_earnings": 23
     },
     "AMZN": {
       "price": 261.31,
-      "rsi": 52.43088693973566,
+      "rsi": 53.48894708358727,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -701,11 +701,11 @@
       "dcf_implied": 51.38,
       "dcf_vs_market_pct": -80.34,
       "next_earnings_date": "2026-10-29",
-      "days_to_earnings": 73
+      "days_to_earnings": 72
     },
     "NFLX": {
       "price": 76.02,
-      "rsi": 54.41691149381908,
+      "rsi": 61.75169572673224,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -719,11 +719,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-20",
-      "days_to_earnings": 64
+      "days_to_earnings": 63
     },
     "ADBE": {
       "price": 254.04,
-      "rsi": 53.133905773295346,
+      "rsi": 59.23556109765247,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -737,11 +737,11 @@
       "dcf_implied": 438.43,
       "dcf_vs_market_pct": 72.58,
       "next_earnings_date": "2026-09-10",
-      "days_to_earnings": 24
+      "days_to_earnings": 23
     },
     "NVDA": {
       "price": 225.01,
-      "rsi": 62.85381429344621,
+      "rsi": 63.03738131555218,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -755,11 +755,11 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-08-26",
-      "days_to_earnings": 9
+      "days_to_earnings": 8
     },
     "NOW": {
       "price": 117.7,
-      "rsi": 53.434360611843886,
+      "rsi": 61.71920331855299,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -773,7 +773,7 @@
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
       "next_earnings_date": "2026-10-28",
-      "days_to_earnings": 72
+      "days_to_earnings": 71
     },
     "PSUS": {
       "price": 39.72,
@@ -795,7 +795,7 @@
     },
     "INTU": {
       "price": 335.6,
-      "rsi": 58.3775363283984,
+      "rsi": 63.97920979510645,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -809,7 +809,7 @@
       "dcf_implied": 437.6,
       "dcf_vs_market_pct": 30.39,
       "next_earnings_date": "2026-08-25",
-      "days_to_earnings": 8
+      "days_to_earnings": 7
     }
   }
 }
