@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-28T00:47:24.188530+00:00",
+  "timestamp": "2026-08-28T04:26:03.555871+00:00",
   "tickers": {
     "CVX": {
       "price": 199.77,
-      "rsi": 58.44099086170214,
+      "rsi": 58.44099087629312,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -21,7 +21,7 @@
     },
     "MU": {
       "price": 935.39,
-      "rsi": 50.993611307791255,
+      "rsi": 50.993611307793714,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -30,7 +30,7 @@
       "fcf_conversion": 0.1953390326736152,
       "rev_cagr": null,
       "debt_equity": 0.28206406350964647,
-      "ev_ebitda": null,
+      "ev_ebitda": 57.461400179293946,
       "screener_score": 3,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
@@ -39,7 +39,7 @@
     },
     "MSFT": {
       "price": 505.06,
-      "rsi": 70.94128198442253,
+      "rsi": 70.9412819954254,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -57,7 +57,7 @@
     },
     "HAL": {
       "price": 35.49,
-      "rsi": 58.20729467406282,
+      "rsi": 58.2072946740616,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": true,
@@ -66,7 +66,7 @@
       "fcf_conversion": 1.3031956352299299,
       "rev_cagr": null,
       "debt_equity": 0.7774591339260108,
-      "ev_ebitda": 10.891315349748389,
+      "ev_ebitda": 10.916006632448605,
       "screener_score": 3,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
@@ -75,7 +75,7 @@
     },
     "WMT": {
       "price": 102.63,
-      "rsi": 32.18114470640644,
+      "rsi": 32.181144782984305,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -93,7 +93,7 @@
     },
     "BAC": {
       "price": 61.17,
-      "rsi": 43.14726136723372,
+      "rsi": 43.147261367233526,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -201,7 +201,7 @@
     },
     "CTRE": {
       "price": 39.36,
-      "rsi": 42.25852057642142,
+      "rsi": 42.25852057389338,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -273,7 +273,7 @@
     },
     "TATT": {
       "price": 37.325,
-      "rsi": 42.640768182861514,
+      "rsi": 42.65341432746447,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -318,10 +318,10 @@
       "fcf_conversion": 1.0127111137800062,
       "rev_cagr": 0.15186745455184925,
       "debt_equity": 0.5045756432189353,
-      "ev_ebitda": 40.16404880822349,
+      "ev_ebitda": 40.193300070247545,
       "screener_score": 5,
-      "dcf_implied": 196.28,
-      "dcf_vs_market_pct": -57.78,
+      "dcf_implied": 196.12,
+      "dcf_vs_market_pct": -57.81,
       "next_earnings_date": null,
       "days_to_earnings": null
     },
@@ -381,7 +381,7 @@
     },
     "META": {
       "price": 571.1,
-      "rsi": 46.9337626865525,
+      "rsi": 46.93376268655001,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -399,7 +399,7 @@
     },
     "AVGO": {
       "price": 371.54,
-      "rsi": 43.900913948588276,
+      "rsi": 43.900913949463316,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -435,7 +435,7 @@
     },
     "AAPL": {
       "price": 314.58,
-      "rsi": 52.666158523104244,
+      "rsi": 52.66615852310632,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -561,7 +561,7 @@
     },
     "PAYC": {
       "price": 237.04,
-      "rsi": 80.40534801476628,
+      "rsi": 80.40534801316727,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -669,7 +669,7 @@
     },
     "ORCL": {
       "price": 151.94,
-      "rsi": 57.297798677464215,
+      "rsi": 57.29779867749711,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -741,7 +741,7 @@
     },
     "NVDA": {
       "price": 227.98,
-      "rsi": 61.3215687477603,
+      "rsi": 61.32156874916177,
       "death_cross_active": false,
       "golden_cross_5d": false,
       "death_cross_5d": false,
@@ -750,7 +750,7 @@
       "fcf_conversion": 0.8051837723937468,
       "rev_cagr": null,
       "debt_equity": 0.07018748450344262,
-      "ev_ebitda": 38.20312814765621,
+      "ev_ebitda": 38.086419143284076,
       "screener_score": 5,
       "dcf_implied": null,
       "dcf_vs_market_pct": null,
@@ -795,7 +795,7 @@
     },
     "INTU": {
       "price": 348.0,
-      "rsi": 56.145380647467135,
+      "rsi": 56.145380649904716,
       "death_cross_active": true,
       "golden_cross_5d": false,
       "death_cross_5d": false,
